@@ -12,7 +12,7 @@
 #include "CallHierarckyCollector.h"
 #include <JavaModelLib/internal/lookup/NameLookup.h>
 #include <SearchLib/internal/pattern/AndPattern.h>
-#include <ProjectModelLib/Builder/NameEnvironment.h>
+
 
 using namespace Jikes::CodeAssist;
 

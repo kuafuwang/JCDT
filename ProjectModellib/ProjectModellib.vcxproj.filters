@@ -231,9 +231,6 @@
     <ClInclude Include="JavaModelLib\impl\config.h">
       <Filter>JavaModellIb\include\impl</Filter>
     </ClInclude>
-    <ClInclude Include="JavaModelLib\compiler\BuilderMgr.h">
-      <Filter>JavaModellIb\include\compiler</Filter>
-    </ClInclude>
     <ClInclude Include="JavaModelLib\compiler\BuildMsgInfo.h">
       <Filter>JavaModellIb\include\compiler</Filter>
     </ClInclude>
@@ -318,9 +315,6 @@
     <ClInclude Include="JavaModelLib\compiler\DefaultProblem.h">
       <Filter>JavaModellIb\include\compiler</Filter>
     </ClInclude>
-    <ClInclude Include="JavaModelLib\compiler\JDTCompiler.h">
-      <Filter>JavaModellIb\include\compiler</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -401,9 +395,6 @@
     <ClCompile Include="JavaModelLib\internal\lookup\NameLookup.cpp">
       <Filter>JavaModellIb\scr\internal\lookup</Filter>
     </ClCompile>
-    <ClCompile Include="scr\compiler\BuilderMgr.cpp">
-      <Filter>JavaModellIb\scr\internal\compiler</Filter>
-    </ClCompile>
     <ClCompile Include="scr\internal\core\ISourceRange.cpp">
       <Filter>JavaModellIb\include\internal\core</Filter>
     </ClCompile>
@@ -450,12 +441,6 @@
       <Filter>JavaModellIb\scr\internal\core</Filter>
     </ClCompile>
     <ClCompile Include="scr\compiler\BraveCompiler.cpp">
-      <Filter>JavaModellIb\scr\internal\compiler</Filter>
-    </ClCompile>
-    <ClCompile Include="scr\compiler\DefaultProblem.cpp">
-      <Filter>JavaModellIb\scr\internal\compiler</Filter>
-    </ClCompile>
-    <ClCompile Include="scr\compiler\JDTCompiler.cpp">
       <Filter>JavaModellIb\scr\internal\compiler</Filter>
     </ClCompile>
   </ItemGroup>

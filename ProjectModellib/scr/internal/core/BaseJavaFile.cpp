@@ -11,9 +11,9 @@
 #include <JavaModelLib/internal/core/OriginalJavaProject.h>
 #include <JavaModelLib/internal/core/IClassFile.h>
 #include <JavaModelLib/internal/core/ICompilationUnit.h>
-#include <Utillib/common/Util.h>
+
 #include <boost/algorithm/string.hpp>
-#include <ProjectModelLib/ProjectModel/ProjectSolution/SolutionModel.h>
+
 #include <PathModelLib/MosesPath/MosesPath.h>
 #include <JavaModelLib/internal/core/IImportDeclaration.h>
 
@@ -288,30 +288,7 @@ namespace Jikes { // Open namespace Jikes block
 				return _path;
 
 			}
-			auto  g_pSolutionModel = GetGolbalSolutionModel();
-			if(_pos && g_pSolutionModel)
-			{
-				boost::shared_ptr<OriginalJavaProject>& project = g_pSolutionModel->pJM->getJavaProject(_pos->proj);
-				if (!project)
-					return{};
-
-				auto pkgRoot = project->findPackageFragmentRootByName(_pos->projectPos.root);
-				if (!pkgRoot)
-					return{};
-				wstring source_root_path;
-				if (pkgRoot->getKind() == IPackageFragmentRoot::K_BINARY) {
-					 source_root_path = pkgRoot->getSourceAttachmentRootPath();
-				}
-				else
-				{
-					source_root_path = pkgRoot->getPath();
-				}
-				if (source_root_path.empty())
-					return{};
-				auto pkg_part = boost::replace_all_copy(_pos->projectPos.pkg, L".", L"/");
-				auto temp = source_root_path + L"/" + pkg_part + L"/" + fName + L".java";
-				return temp;
-			}
+			
 			return{};
 
 		}

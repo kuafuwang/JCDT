@@ -2,7 +2,7 @@
 #include "MatchLocator.h"
 #include <JavaModelLib/internal/core/ClassFile.h>
 #include <SearchLib/internal/core/IJavaSearchScope.h>
-#include <ProjectModelLib/ProjectModel/ProjectSolution/SolutionModel.h>
+
 #include <JavaModelLib/internal/core/JavaModel.h>
 
 #include <JavaModelLib/internal/core/CloneJavaProject.h>

@@ -22,7 +22,7 @@
     <ProjectGuid>{97433D2D-31F6-4E81-AB3D-14A8F44BE410}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>PathModelLib</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -43,13 +43,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -142,15 +142,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PathModelLib\ClassPath\BaseCompilerEnvManager.h" />
-    <ClInclude Include="PathModelLib\ClassPath\ClasspathContainer.h" />
     <ClInclude Include="PathModelLib\ClassPath\ClasspathEntry.h" />
-    <ClInclude Include="PathModelLib\ClassPath\ContainersCtrl.h" />
-    <ClInclude Include="PathModelLib\ClassPath\ConverterContainer.h" />
     <ClInclude Include="PathModelLib\ClassPath\IClasspathContainer.h" />
     <ClInclude Include="PathModelLib\ClassPath\IClasspathEntry.h" />
     <ClInclude Include="PathModelLib\ClassPath\IConverterContainer.h" />
-    <ClInclude Include="PathModelLib\ClassPath\SimulatorConfig.h" />
     <ClInclude Include="PathModelLib\DeltaPath\NameLookUpNotify.h" />
     <ClInclude Include="PathModelLib\DeltaPath\ResouceOptStack.h" />
     <ClInclude Include="PathModelLib\JarPath\ClassFile.h" />
@@ -168,12 +163,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PathModelLib\ClassPath\BaseCompilerEnvManager.cpp" />
-    <ClCompile Include="PathModelLib\ClassPath\ClasspathContainer.cpp" />
     <ClCompile Include="PathModelLib\ClassPath\ClasspathEntry.cpp" />
-    <ClCompile Include="PathModelLib\ClassPath\ContainersCtrl.cpp" />
-    <ClCompile Include="PathModelLib\ClassPath\ConverterContainer.cpp" />
-    <ClCompile Include="PathModelLib\ClassPath\SimulatorConfig.cpp" />
     <ClCompile Include="PathModelLib\DeltaPath\NameLookUpNotify.cpp" />
     <ClCompile Include="PathModelLib\DeltaPath\ResouceOptStack.cpp" />
     <ClCompile Include="PathModelLib\JarPath\ClassFile.cpp" />

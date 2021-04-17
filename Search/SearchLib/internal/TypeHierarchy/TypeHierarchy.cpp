@@ -16,7 +16,6 @@
 #include <JCDT_Lib/internal/impl/option.h>
 #include <JCDT_Lib/internal/env/INameEnvironment.h>
 #include <JavaModelLib/internal/core/OriginalJavaProject.h>
-#include <ProjectModelLib/Builder/NameEnvironment.h>
 #include <CodeAssistLib/select/SelecctResult.h>
 #include <PathModelLib/MosesPath/MosesPath.h>
 #include <JavaModelLib/internal/core/OriginalJavaProject.h>

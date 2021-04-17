@@ -5,18 +5,18 @@
 #include <JavaModelLib/internal/core/OriginalJavaProject.h>
 #include <JCDT_Lib/internal/core/IProgressMonitor.hpp>
 #include <JavaModelLib/internal/lookup/NameLookup.h>
-#include <ProjectModelLib/ProjectModel/ProjectSolution/SolutionModel.h>
-#include <PathModelLib/ClassPath/BaseCompilerEnvManager.h>
-#include <ProjectModelLib/Builder/NameEnvironment.h>
+
+
+
 #include <boost/make_shared.hpp>
-#include <JavaModelLib/compiler/BuilderMgr.h>
+
 #include <boost/atomic.hpp>
 #include <boost/thread/mutex.hpp>
 
 #include <JCDT_Lib/internal/impl/FileHelper.h>
 #include <boost/algorithm/string.hpp>
 #include <CodeAssistLib/impl/CodeAssistMgr.h>
-#include <ProjectModelLib/ProjectModel/JCIDE/ProjectModel.h>
+
 #include <PathModelLib/DeltaPath/NameLookUpNotify.h>
 #include <PathModelLib/JarPath/JarPathManager.h>
 #include <PathModelLib/SourcePath/UnitManager.h>
@@ -126,52 +126,7 @@ namespace JavaModel{
 
 	bool JavaModel::generateInfos(IProgressMonitor* pm)
 	{
-		writeLock(rw_mutex);
 		
-		map<std::wstring, ProjectModel*>&  projects = m_pOwner->map_ProjectModels;
-		auto it = projects.begin();
-		auto end = projects.end();
-		std::wstring binDirPath;
-		for (; it != end; ++it){
-			ProjectModel* proj = it->second;
-			if(proj && proj->IsExist()){
-				auto temp = boost::make_shared<OriginalJavaProject>(
-					this, 
-					it->first,
-					proj->GetUnixStyleProjectPath(),jar_manager_);
-
-				childrens[it->first] = temp;
-	
-				temp->SetOutputDir(proj->GetJikesParseProjectPath());
-
-
-				BuildPathConfigData& buildPaths = proj->getBuildPathConfigData();
-				const std::vector<IClasspathEntry*> & classpathEntries = buildPaths.classpathEntry;
-				size_t entr_size = classpathEntries.size();
-				for (size_t i = 0; i < entr_size; ++i) {
-					IClasspathEntry* pEntry = classpathEntries[i];
-					assert(pEntry);
-					if (!pEntry)
-						continue;
-					switch (pEntry->getEntryKind()) {
-					case IClasspathEntry::CPE_LIBRARY: {
-						auto lib_entry = reinterpret_cast<LibraryClasspathEntry*>(pEntry);
-						auto _path = lib_entry->getAbolutePath().wstring();
-						jar_manager_.addJarPackageRootReference(_path);
-					}
-					break;
-
-					default:
-						break;
-					}
-				}
-
-
-
-				temp->buildStructure(false, nullptr);
-			}
-			
-		}
 		return true;
 	}
 
@@ -180,12 +135,7 @@ namespace JavaModel{
 	void JavaModel::GetProjectsInClassPaths(set<wstring>& project_expand_class_path, const wstring& proj)
 	{
 	
-		std::map<std::wstring, ProjectModel*>&  projects = m_pOwner->map_ProjectModels;
-		auto find_it = projects.find(proj);
-		if(find_it != projects.end()){
-			NameEnvironment::GetProjectsInClassPaths(projects, find_it->second, project_expand_class_path);
-		}
-
+	
 	}
 
 	
@@ -193,9 +143,7 @@ namespace JavaModel{
 	JavaModel::~JavaModel()
 	{
 
-		if (builder_mgr_) {
-			builder_mgr_->pm->setCanceled(true);
-		}
+		
 		if (code_assist_mgr_) {
 			code_assist_mgr_->pm->setCanceled(true);
 		}
@@ -213,7 +161,7 @@ namespace JavaModel{
 		code_assist_cond->notify_all();
 		Sleep(20);
 
-		delete  builder_mgr_;
+	
 		delete code_assist_mgr_;
 
 	
@@ -226,7 +174,7 @@ namespace JavaModel{
 	}
 
 	JavaModel::JavaModel(SolutionModel* _owner, PathModel::BaseCompilerEnvManager* env_mgr)
-		: IJavaModel(L"JCIDE"),m_pOwner(_owner),jar_manager_(*env_mgr->jar_manager_),m_CompilerEnvMgr(env_mgr)
+		: IJavaModel(L"JCIDE"),m_pOwner(_owner),m_CompilerEnvMgr(env_mgr)
 	{
 		cs_generate = new CRITICAL_SECTION();
 		InitializeCriticalSectionAndSpinCount(cs_generate, 2000);
@@ -279,42 +227,21 @@ namespace JavaModel{
 	void JavaModel::getExpandClasspath(JikesClassPaths & paths, const wstring & projectName)
 	{
 		
-		std::map<std::wstring, ProjectModel*>&  projects = m_pOwner->map_ProjectModels;
-		auto find_it = projects.find(projectName);
-		if (find_it != projects.end()) {
-			const auto& containerCtrl = m_CompilerEnvMgr->getContainerCtrl(find_it->second->GetParent()->GetChipPack());
-			set< ProjectModel*> visitedProjects;
-			NameEnvironment::computeExpanBuildpathForJikesLib(
-				projects,	
-				containerCtrl,
-				find_it->second,
-				visitedProjects,
-				paths);
-		}
+		
 	}
 
 	
 
 	void JavaModel::getClasspathButNoPorjcetEntry(JikesClassPaths& paths, const wstring& projectName) const
 	{
-		std::map<std::wstring, ProjectModel*>&  projects = m_pOwner->map_ProjectModels;
-		auto find_it = projects.find(projectName);
-		if (find_it != projects.end()) {
-			const auto& containerCtrl = m_CompilerEnvMgr->getContainerCtrl(find_it->second->GetParent()->GetChipPack());
-			NameEnvironment::getClasspathButNoPorjcetEntry(find_it->second, containerCtrl, paths);
-		}
+
 	}
 	 void JavaModel::getClasspathButNoPorjcetEntryForSearchScope( 
 		 const wstring& projectName,
 		const std::map<int, bool>& limits,
 		map<wstring, wstring> & result)
 	{
-		std::map<std::wstring, ProjectModel*>&  projects = m_pOwner->map_ProjectModels;
-		auto find_it = projects.find(projectName);
-		if (find_it != projects.end()) {
-			const auto& containerCtrl = m_CompilerEnvMgr->getContainerCtrl(find_it->second->GetParent()->GetChipPack());
-			NameEnvironment::getClasspathButNoPorjcetEntryForSearchScope(find_it->second, containerCtrl, limits, result);
-		}
+	
 	}
 
 	map<wstring,boost::shared_ptr<OriginalJavaProject>>* JavaModel::getProjectsToBuild()
@@ -399,13 +326,9 @@ namespace JavaModel{
 
 	set<wstring> JavaModel::getProjectsThatNeeds(const wstring projectName)
 	{
-		auto _size = m_pOwner->vecBuildStep.size();
-		if (!_size) {
 
-			return {};
-		}
-		auto vecBuildStep(m_pOwner->vecBuildStep);
-
+		std::map<wstring,wstring> vecBuildStep;
+		
 
 		set<wstring> project_expand_class_path;
 		set<wstring> depended_projects;
@@ -438,12 +361,8 @@ namespace JavaModel{
 
 	set<wstring> JavaModel::getProjectsNeededBy(const wstring projectName)
 	{
-		auto _size = m_pOwner->vecBuildStep.size();
-		if (!_size) {
+		std::map<wstring, wstring> vecBuildStep;
 
-			return {};
-		}
-		auto vecBuildStep(m_pOwner->vecBuildStep);
 
 
 		set<wstring> project_expand_class_path;
@@ -479,16 +398,7 @@ namespace JavaModel{
 	void JavaModel::GetAllFileNamesInPkg(const wstring& project, const wstring& pkgName, 
 		vector<wstring>& names) const
 	{
-		auto find_proj = m_pOwner->GetProject(project);
-		if (!find_proj)
-			return;
-		try {
-			find_proj->GetAllClassNames(pkgName, names);
-		}
-		catch(ProjectError&)
-		{
-			
-		}
+	
 	}
 
 	void JavaModel::UpdateCodeAssistInfo(CodeAssist::AssistInfo* _pos) 
@@ -530,7 +440,7 @@ namespace JavaModel{
 
 
 	void buildProc(BuilderMgr* mgr){
-		mgr->BuildProc();
+		
 	}
 	
 	void CodeAssistProc(CodeAssist::CodeAssistMgr* mgr) {
@@ -541,12 +451,12 @@ namespace JavaModel{
 	{
 		FileHelper::getInstance()->RegisterAssist(asssis_helper);
 
-		builder_mgr_ = builder;
+		
 		code_assist_mgr_ = assist;
 
 		buildStructure(false,nullptr);
 
-		boost::thread temp(buildProc, builder_mgr_);
+		boost::thread temp(buildProc, nullptr);
 		temp.detach();
 		RebuildAllProjects();
 
@@ -557,7 +467,7 @@ namespace JavaModel{
 
 	void JavaModel::RebuildAllProjects()
 	{
-		assert(builder_mgr_);
+		
 		readLock(rw_mutex);
 		auto it = childrens.begin();
 		auto end_childrens = childrens.end();

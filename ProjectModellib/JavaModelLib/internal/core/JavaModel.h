@@ -8,7 +8,8 @@
 #include <set>
 #include "IJavaModel.h"
 #include <boost/thread.hpp>
-#include <Utillib/common/lru.hpp>
+#include "lru.hpp"
+#include "PathModelLib/JarPath/JarPathManager.h"
 using std::set;
 using std::vector;
 using std::wstring;
@@ -139,12 +140,12 @@ namespace Jikes { // Open namespace Jikes block
 
 		private:
 			
-			PathModel::JarPathManager& jar_manager_;
+			PathModel::JarPathManager jar_manager_;
 			std::map < wstring, boost::shared_ptr<OriginalJavaProject> >  childrens;
 			lru::LRUNoCache<wstring, boost::shared_ptr<OriginalJavaProject> > childrenCache;
 			lru::LRUNoCache<wstring, boost::shared_ptr<OriginalJavaProject> >::const_iterator chche_end;
 			boost::shared_mutex rw_mutex;
-			BuilderMgr* builder_mgr_ = nullptr;
+		
 			static boost::shared_ptr<OriginalJavaProject> NO_PROJECT;
 
 			lru::LRUNoCache< wstring, DocumentView* > modifiedDocsCache;

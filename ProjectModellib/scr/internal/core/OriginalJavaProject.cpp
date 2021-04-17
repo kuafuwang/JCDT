@@ -16,16 +16,14 @@
 #include <JavaModelLib/internal/core/CompilationUnit.h>
 #include <JCDT_Lib/internal/impl/FileLocation.h>
 #include <JCDT_Lib/internal/lookup/FileSymbol.h>
-#include <Utillib/common/Util.h>
+
 #include <JCDT_Lib/internal/semantic/semantic.h>
 #include <JavaModelLib/internal/core/BinaryType.h>
 #include <boost/algorithm/string.hpp>
 #include <boost/filesystem.hpp>
 #include <PathModelLib/SourcePath/UnitManager.h>
 #include <PathModelLib/SourcePath/CompilationUnitTypInfo.h>
-#include "ProjectModelLib/Builder/NameEnvironment.h"
-#include "ProjectModelLib/ProjectModel/ProjectSolution/SolutionModel.h"
-#include "ProjectModelLib/ProjectModel/JCIDE/ProjectModel.h"
+
 #include "JavaModelLib/compiler/DefaultProblem.h"
 using namespace std;
 namespace Jikes { // Open namespace Jikes block

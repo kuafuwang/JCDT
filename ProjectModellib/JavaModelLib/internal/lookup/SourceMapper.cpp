@@ -17,8 +17,6 @@
 #include <JCDT_Lib/internal/ast/AstClassDeclaration.h>
 #include <JCDT_Lib/internal/ast/AstEnumDeclaration.h>
 #include <JCDT_Lib/internal/ast/AstInterfaceDeclaration.h>
-#include <Utillib/common/Util.h>
-#include <ProjectModelLib/ProjectModel/ProjectSolution/SolutionModel.h>
 #include <boost/filesystem/operations.hpp>
 #include <JavaModelLib/internal/core/OriginalJavaProject.h>
 #include <JavaModelLib/internal/core/BinaryMethod.h>
@@ -394,9 +392,9 @@ namespace JavaModel{
 			
 			auto pkg_part = boost::replace_all_copy(pkg->getElementName(), L".", L"/");
 			auto temp = source_root_path + L"/" + pkg_part + L"/" + file->getElementName() + L".java";
-			source_path = Util::UnicodeToUtf8(temp);
+			//source_path = Util::UnicodeToUtf8(temp);
 		}
-		else
+		/*else
 		{
 			auto _pos = file->GetPosition();
 			auto  g_pSolutionModel = GetGolbalSolutionModel();
@@ -415,7 +413,7 @@ namespace JavaModel{
 			auto pkg_part = boost::replace_all_copy(_pos->projectPos.pkg, L".", L"/");
 			auto temp = source_root_path + L"/" + pkg_part + L"/" + file->getElementName() + L".java";
 			source_path = Util::UnicodeToUtf8(temp);
-		}
+		}*/
 		
 		namespace fs = boost::filesystem;
 	

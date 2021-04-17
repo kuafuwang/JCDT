@@ -54,13 +54,7 @@
     <ClInclude Include="PathModelLib\JarPath\JavaZip.h">
       <Filter>scr\JarPath</Filter>
     </ClInclude>
-    <ClInclude Include="PathModelLib\ClassPath\ClasspathContainer.h">
-      <Filter>scr\ClassPath</Filter>
-    </ClInclude>
     <ClInclude Include="PathModelLib\ClassPath\ClasspathEntry.h">
-      <Filter>scr\ClassPath</Filter>
-    </ClInclude>
-    <ClInclude Include="PathModelLib\ClassPath\ContainersCtrl.h">
       <Filter>scr\ClassPath</Filter>
     </ClInclude>
     <ClInclude Include="PathModelLib\ClassPath\IClasspathContainer.h">
@@ -74,9 +68,6 @@
     </ClInclude>
     <ClInclude Include="PathModelLib\Util\DependencyUtil.h">
       <Filter>scr\Util</Filter>
-    </ClInclude>
-    <ClInclude Include="PathModelLib\ClassPath\BaseCompilerEnvManager.h">
-      <Filter>scr\ClassPath</Filter>
     </ClInclude>
     <ClInclude Include="PathModelLib\DeltaPath\NameLookUpNotify.h">
       <Filter>scr\DeltaPath</Filter>
@@ -94,12 +85,6 @@
       <Filter>scr\SourcePath</Filter>
     </ClInclude>
     <ClInclude Include="PathModelLib\ClassPath\IConverterContainer.h">
-      <Filter>scr\ClassPath</Filter>
-    </ClInclude>
-    <ClInclude Include="PathModelLib\ClassPath\ConverterContainer.h">
-      <Filter>scr\ClassPath</Filter>
-    </ClInclude>
-    <ClInclude Include="PathModelLib\ClassPath\SimulatorConfig.h">
       <Filter>scr\ClassPath</Filter>
     </ClInclude>
   </ItemGroup>
@@ -123,17 +108,8 @@
     <ClCompile Include="PathModelLib\JarPath\JavaZip.cpp">
       <Filter>scr\JarPath</Filter>
     </ClCompile>
-    <ClCompile Include="PathModelLib\ClassPath\ClasspathContainer.cpp">
-      <Filter>scr\ClassPath</Filter>
-    </ClCompile>
-    <ClCompile Include="PathModelLib\ClassPath\ContainersCtrl.cpp">
-      <Filter>scr\ClassPath</Filter>
-    </ClCompile>
     <ClCompile Include="PathModelLib\Util\PathUtil.cpp">
       <Filter>scr\Util</Filter>
-    </ClCompile>
-    <ClCompile Include="PathModelLib\ClassPath\BaseCompilerEnvManager.cpp">
-      <Filter>scr\ClassPath</Filter>
     </ClCompile>
     <ClCompile Include="PathModelLib\DeltaPath\NameLookUpNotify.cpp">
       <Filter>scr\DeltaPath</Filter>
@@ -151,12 +127,6 @@
       <Filter>scr\SourcePath</Filter>
     </ClCompile>
     <ClCompile Include="PathModelLib\ClassPath\ClasspathEntry.cpp">
-      <Filter>scr\ClassPath</Filter>
-    </ClCompile>
-    <ClCompile Include="PathModelLib\ClassPath\ConverterContainer.cpp">
-      <Filter>scr\ClassPath</Filter>
-    </ClCompile>
-    <ClCompile Include="PathModelLib\ClassPath\SimulatorConfig.cpp">
       <Filter>scr\ClassPath</Filter>
     </ClCompile>
   </ItemGroup>

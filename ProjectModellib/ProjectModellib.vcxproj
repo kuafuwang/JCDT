@@ -156,10 +156,8 @@
   <ItemGroup>
     <ClInclude Include="JavaModelLib\compiler\AssistInfo.h" />
     <ClInclude Include="JavaModelLib\compiler\BraveCompiler.h" />
-    <ClInclude Include="JavaModelLib\compiler\BuilderMgr.h" />
     <ClInclude Include="JavaModelLib\compiler\BuildMsgInfo.h" />
     <ClInclude Include="JavaModelLib\compiler\DefaultProblem.h" />
-    <ClInclude Include="JavaModelLib\compiler\JDTCompiler.h" />
     <ClInclude Include="JavaModelLib\impl\config.h" />
     <ClInclude Include="JavaModelLib\impl\StructState.h" />
     <ClInclude Include="JavaModelLib\internal\core\BaseJavaFile.h" />
@@ -250,9 +248,6 @@
     <ClCompile Include="JavaModelLib\internal\lookup\SourceMapper.cpp" />
     <ClCompile Include="JavaModelLib\internal\lookup\SourceMapperFile.cpp" />
     <ClCompile Include="scr\compiler\BraveCompiler.cpp" />
-    <ClCompile Include="scr\compiler\BuilderMgr.cpp" />
-    <ClCompile Include="scr\compiler\DefaultProblem.cpp" />
-    <ClCompile Include="scr\compiler\JDTCompiler.cpp" />
     <ClCompile Include="scr\internal\core\BaseJavaFile.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
     </ClCompile>

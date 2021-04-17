@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "SuperTypeNamesCollector.h"
 #include <SearchLib/internal/pattern/MethodReferencepattern.h>
-#include <ProjectModelLib/ProjectModel/ProjectSolution/SolutionModel.h>
 #include <PathModelLib/MosesPath/MosesPath.h>
 #include <JavaModelLib/internal/core/OriginalJavaProject.h>
 #include <JavaModelLib/internal/core/JavaModel.h>
@@ -168,7 +167,7 @@ namespace Search{
 	{
 		if(pattern->declaringType){
 			auto actual_point = pattern->declaringType;
-			auto pjm = GetGolbalSolutionModel()->pJM;
+			Jikes::JavaModel::JavaModel* pjm = nullptr ;
 			if (!pjm || !actual_point)
 				return;
 			wstring source_file;

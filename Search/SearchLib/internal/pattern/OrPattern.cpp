@@ -113,7 +113,7 @@ namespace Search{
 			return;
 
 		patterns = new SearchPattern*[2];
-		matchMode = /*std::*/min(_leftPattern->matchMode, _rightPattern->matchMode);
+		matchMode = /*std::*/std::min(_leftPattern->matchMode, _rightPattern->matchMode);
 		isCaseSensitive = _leftPattern->isCaseSensitive || _rightPattern->isCaseSensitive;
 
 		patterns[0] = _leftPattern;

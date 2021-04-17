@@ -2,7 +2,7 @@
 #include "JavaSearchScope.h"
 
 #include <JavaModelLib/internal/core/JavaModel.h>
-#include <ProjectModelLib/Builder/NameEnvironment.h>
+
 #include "JavaSearchScopeData.h"
 using namespace std;
 namespace Jikes { // Open namespace Jikes block
@@ -25,11 +25,11 @@ namespace Search{
 
 	JavaSearchScope::JavaSearchScope()
 	{
-		limits[NameEnvironment::IN_SOURCES] = true;
-		limits[NameEnvironment::IN_REQURED_PROJECTS] = true;
-		limits[NameEnvironment::JRE_LIBRAIRY] = false;
-		limits[NameEnvironment::APPLICATION_LIB] = false;
-		limits[NameEnvironment::USER_DEFINED_CONTAINER] = false;
+		//limits[NameEnvironment::IN_SOURCES] = true;
+		//limits[NameEnvironment::IN_REQURED_PROJECTS] = true;
+		//limits[NameEnvironment::JRE_LIBRAIRY] = false;
+		//limits[NameEnvironment::APPLICATION_LIB] = false;
+		//limits[NameEnvironment::USER_DEFINED_CONTAINER] = false;
 	}
 
 	JavaSearchScope::~JavaSearchScope()
@@ -81,10 +81,10 @@ namespace Search{
 		if (!pJm)
 			return;
 		set< wstring > javaProjects;
-		if (limits[NameEnvironment::IN_REQURED_PROJECTS]){
+		/*if (limits[NameEnvironment::IN_REQURED_PROJECTS]){*/
 			// 获取相关javaproject
 			 javaProjects = pJm->getProjectsRelatedTo(project);
-		}
+		//}
 		javaProjects.insert(project);
 		ProcessProjectPath(javaProjects,pJm);
 	}

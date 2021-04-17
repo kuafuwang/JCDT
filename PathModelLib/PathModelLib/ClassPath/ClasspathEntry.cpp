@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "ClasspathEntry.h"
 #include <boost/algorithm/string.hpp>
-#include <Utillib/MessageDigest/MessageDigestHelp.h>
+
 #include <JCDT_Lib/internal/util/CharOperation.h>
 #include <boost/filesystem/operations.hpp>
 #include "PathModelLib/Util/PathUtil.h"
@@ -117,7 +117,7 @@ namespace Jikes { // Open namespace Jikes block
 			
 			 std::vector<unsigned char> md5_value;
 			 auto _path_string = lib_path.string();
-			 MessageDigestHelp::get_md5(_path_string.c_str(), _path_string.size(), md5_value);
+			
 			 char hex[35];
 			 memset(hex, 0, sizeof(hex));
 			 for (int i = 0; i < md5_value.size(); ++i)
@@ -130,10 +130,7 @@ namespace Jikes { // Open namespace Jikes block
 		 wstring LibraryClasspathEntry::GetFileMD5Stamp(const path& lib_path)
 		 {
 			 std::vector<unsigned char> md5_value;
-			if(MessageDigestHelp::SUCESS_STATE != MessageDigestHelp::get_file_md5(lib_path.string(), md5_value))
-			{
-				return L"";
-			}
+
 			 char hex[35];
 			 memset(hex, 0, sizeof(hex));
 			 for (int i = 0; i < md5_value.size(); ++i)
