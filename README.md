@@ -6,7 +6,6 @@ This is the core part of JCIDE's Java development tools. It contains the non-UI 
 
 * an incremental or batch Java compiler which comes from jlikes
 * Java source and class file indexer and search infrastructure
-* a Java source code formatter
 * APIs for code assist, access to the AST and structured manipulation of Java source.
 
 For more information and important links, refer to the [Jlikes] [1] or the [JCIDE page] [2].
