@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9EA3DA0F-8B40-4E17-88BF-A4BA24BD6DE6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ProjectModellib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\tinyxml;..\InterfaceLib;..\JCDT;..\..\ApduLib\include\apdulib;.\;..\CodeAssist;..\Utillib;..\PathModelLib;..\JDK\include;..\JDK\include\win32;$(IncludePath)</IncludePath>
+    <OutDir>../Our_lib_V3</OutDir>
+    <TargetName>ProjectModelLib_MD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\tinyxml;..\InterfaceLib;..\JCDT;..\..\ApduLib\include\apdulib;.\;..\CodeAssist;..\Utillib;..\PathModelLib;..\JDK\include\win32;..\JDK\include;$(IncludePath)</IncludePath>
+    <OutDir>../Our_lib_V3</OutDir>
+    <TargetName>ProjectModelLib_MDD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\Our_lib_V3</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>ProjectModelLib_MTD</TargetName>
+    <IncludePath>..\..\ApduLib\include\apdulib;.\;..\Utillib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JavaModelLib\compiler\AssistInfo.h" />
+    <ClInclude Include="JavaModelLib\compiler\BraveCompiler.h" />
+    <ClInclude Include="JavaModelLib\compiler\BuilderMgr.h" />
+    <ClInclude Include="JavaModelLib\compiler\BuildMsgInfo.h" />
+    <ClInclude Include="JavaModelLib\compiler\DefaultProblem.h" />
+    <ClInclude Include="JavaModelLib\compiler\JDTCompiler.h" />
+    <ClInclude Include="JavaModelLib\impl\config.h" />
+    <ClInclude Include="JavaModelLib\impl\StructState.h" />
+    <ClInclude Include="JavaModelLib\internal\core\BaseJavaFile.h" />
+    <ClInclude Include="JavaModelLib\internal\core\BaseJavaType.h" />
+    <ClInclude Include="JavaModelLib\internal\core\BaseMethod.h" />
+    <ClInclude Include="JavaModelLib\internal\core\BaseProject.h" />
+    <ClInclude Include="JavaModelLib\internal\core\BinaryField.h" />
+    <ClInclude Include="JavaModelLib\internal\core\BinaryMethod.h" />
+    <ClInclude Include="JavaModelLib\internal\core\BinaryType.h" />
+    <ClInclude Include="JavaModelLib\internal\core\ClassFile.h" />
+    <ClInclude Include="JavaModelLib\internal\core\CloneJavaProject.h" />
+    <ClInclude Include="JavaModelLib\internal\core\CompilationUnit.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IClassFile.h" />
+    <ClInclude Include="JavaModelLib\internal\core\ICompilationUnit.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IField.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IImportContainer.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IImportDeclaration.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IInitializer.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IJavaCardDocType.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IJavaElement.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IJavaElementType.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IJavaModel.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IJavaProject.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IMember.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IMethod.h" />
+    <ClInclude Include="JavaModelLib\internal\core\ImportContainer.h" />
+    <ClInclude Include="JavaModelLib\internal\core\ImportDeclaration.h" />
+    <ClInclude Include="JavaModelLib\internal\core\Initializer.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IOpenable.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IPackageDeclaration.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IPackageFragment.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IPackageFragmentRoot.h" />
+    <ClInclude Include="JavaModelLib\internal\core\ISourceRange.h" />
+    <ClInclude Include="JavaModelLib\internal\core\IType.h" />
+    <ClInclude Include="JavaModelLib\internal\core\JarPackageFragment.h" />
+    <ClInclude Include="JavaModelLib\internal\core\JarPackageFragmentRoot.h" />
+    <ClInclude Include="JavaModelLib\internal\core\JavaElement.h" />
+    <ClInclude Include="JavaModelLib\internal\core\JavaModel.h" />
+    <ClInclude Include="JavaModelLib\internal\core\JavaZip.h" />
+    <ClInclude Include="JavaModelLib\internal\core\Member.h" />
+    <ClInclude Include="JavaModelLib\internal\core\Openable.h" />
+    <ClInclude Include="JavaModelLib\internal\core\OriginalJavaProject.h" />
+    <ClInclude Include="JavaModelLib\internal\core\PackageDeclaration.h" />
+    <ClInclude Include="JavaModelLib\internal\core\PackageFragment.h" />
+    <ClInclude Include="JavaModelLib\internal\core\PackageFragmentRoot.h" />
+    <ClInclude Include="JavaModelLib\internal\core\SourceField.h" />
+    <ClInclude Include="JavaModelLib\internal\core\SourceMethod.h" />
+    <ClInclude Include="JavaModelLib\internal\core\SourceType.h" />
+    <ClInclude Include="JavaModelLib\internal\info\InitializerElementInfo.h" />
+    <ClInclude Include="JavaModelLib\internal\info\JavaElementInfo.h" />
+    <ClInclude Include="JavaModelLib\internal\info\MemberElementInfo.h" />
+    <ClInclude Include="JavaModelLib\internal\info\SourceFieldElementInfo.h" />
+    <ClInclude Include="JavaModelLib\internal\info\SourceMethodElementInfo.h" />
+    <ClInclude Include="JavaModelLib\internal\info\SourceRefElementInfo.h" />
+    <ClInclude Include="JavaModelLib\internal\info\SourceTypeElementInfo.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\IJavaElementRequestor.hpp" />
+    <ClInclude Include="JavaModelLib\internal\lookup\IJavaSearchConstants.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\ISearchableNameEnvironment.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\ISearchRequestor.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\ISelectionRequestor.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\JavaElementRequestor.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\NameLookup.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\NameLookUpNotify.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\ResouceOptStack.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\SearchableEnvironmentRequestor.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\SelectionRequestor.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\SingleTypeRequestor.h" />
+    <ClInclude Include="JavaModelLib\internal\lookup\SourceMapper.h" />
+    <ClInclude Include="ProjectModelLib\Builder\ClasspathContainer.h" />
+    <ClInclude Include="ProjectModelLib\Builder\ClasspathEntry.h" />
+    <ClInclude Include="ProjectModelLib\Builder\ContainersCtrl.h" />
+    <ClInclude Include="ProjectModelLib\Builder\IClasspathContainer.h" />
+    <ClInclude Include="ProjectModelLib\Builder\IClasspathEntry.h" />
+    <ClInclude Include="ProjectModelLib\Configuration\CompilerProperty\BaseCompilerEnvManager.h" />
+    <ClInclude Include="ProjectModelLib\ProjectModel\Other\DependencyUtil.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JavaModelLib\compiler\BuildMsgInfo.cpp" />
+    <ClCompile Include="JavaModelLib\internal\lookup\NameLookup.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="JavaModelLib\internal\lookup\SearchableEnvironmentRequestor.cpp" />
+    <ClCompile Include="JavaModelLib\internal\lookup\SelectionRequestor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="JavaModelLib\internal\lookup\SourceMapper.cpp" />
+    <ClCompile Include="JavaModelLib\internal\lookup\SourceMapperFile.cpp" />
+    <ClCompile Include="scr\compiler\BraveCompiler.cpp" />
+    <ClCompile Include="scr\compiler\BuilderMgr.cpp" />
+    <ClCompile Include="scr\compiler\DefaultProblem.cpp" />
+    <ClCompile Include="scr\compiler\JDTCompiler.cpp" />
+    <ClCompile Include="scr\internal\core\BaseJavaFile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BaseJavaType.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BaseMethod.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BaseProject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BinaryField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BinaryMethod.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BinaryType.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\ClassFile.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\CloneJavaProject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\CompilationUnit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\IField.cpp" />
+    <ClCompile Include="scr\internal\core\IImportDeclaration.cpp" />
+    <ClCompile Include="scr\internal\core\IMember.cpp" />
+    <ClCompile Include="scr\internal\core\Initializer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\IPackageDeclaration.cpp" />
+    <ClCompile Include="scr\internal\core\ISourceRange.cpp" />
+    <ClCompile Include="scr\internal\core\IType.cpp" />
+    <ClCompile Include="scr\internal\core\JarPackageFragment.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\JarPackageFragmentRoot.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\JavaElement.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\JavaModel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\Member.cpp" />
+    <ClCompile Include="scr\internal\core\Openable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\OriginalJavaProject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\PackageDeclaration.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\PackageFragment.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\PackageFragmentRoot.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\SourceField.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\SourceMethod.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\SourceType.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scr\internal\info\InitializerElementInfo.cpp" />
+    <ClCompile Include="scr\internal\info\SourceFieldElementInfo.cpp" />
+    <ClCompile Include="scr\internal\info\SourceMethodElementInfo.cpp" />
+    <ClCompile Include="scr\internal\info\SourceTypeElementInfo.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\boost.1.69.0.0\build\boost.targets" Condition="Exists('..\packages\boost.1.69.0.0\build\boost.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\boost.1.69.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.69.0.0\build\boost.targets'))" />
+  </Target>
+</Project>

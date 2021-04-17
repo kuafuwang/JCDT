@@ -1,0 +1,1696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b4a22ddc-901c-41c3-b1c1-5c74ce5004bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal">
+      <UniqueIdentifier>{13f66020-877d-4c60-844c-68529da62ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\compiler">
+      <UniqueIdentifier>{2b81209a-75a8-48b1-906c-c171dceb5d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{7b3a3346-c0b0-46e7-a7d6-6a6d783cbd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal">
+      <UniqueIdentifier>{187dec86-9839-4e51-9acc-ea0b649d2212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler">
+      <UniqueIdentifier>{2b43057b-a59c-4d91-bd20-0f8dc81cac5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\ast">
+      <UniqueIdentifier>{23530e80-e327-4fd2-9a3c-371ae8825508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\classfmt">
+      <UniqueIdentifier>{e5fcdde9-3083-409b-a9e3-87bcf1f33a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\codegen">
+      <UniqueIdentifier>{dbe43b20-fec1-4c67-82ad-bba05b90f608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\compiler">
+      <UniqueIdentifier>{37c0dcf5-0488-468a-b25c-496b13b07c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\env">
+      <UniqueIdentifier>{7f3026c8-fd8b-4a2f-a1ac-693922336934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\flow">
+      <UniqueIdentifier>{25e74c10-327f-4560-9e08-72f03ca8bfe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\impl">
+      <UniqueIdentifier>{cc148048-ae4f-4bcf-8a1f-c95d1d44bb66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\lookup">
+      <UniqueIdentifier>{f9b3228c-aec6-46a3-8279-4c5847344df7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\parser">
+      <UniqueIdentifier>{0a6784f2-961a-40c4-870e-a87924be0e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\problem">
+      <UniqueIdentifier>{22f43083-dc00-4913-8863-581ac5948773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\util">
+      <UniqueIdentifier>{d7d126e1-f2db-42c8-ad24-b806fda347f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\parser\diagnose">
+      <UniqueIdentifier>{798d6c99-3554-4808-a985-0e5fd5ffc661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\ast">
+      <UniqueIdentifier>{fcfdabc4-1d0d-4285-bb41-bfe5a32c5951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\classfmt">
+      <UniqueIdentifier>{5ee9f37e-74e7-4495-b722-e2ef808f6f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\compiler">
+      <UniqueIdentifier>{beb30338-f6e8-44a9-b4fa-2c74b055b4b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\env">
+      <UniqueIdentifier>{8b8208c1-5e7f-49dd-9946-313d969bcb05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\flow">
+      <UniqueIdentifier>{1b84cc50-9b81-4a73-a8c7-334b6da3f3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\impl">
+      <UniqueIdentifier>{c65abad7-6e27-4bab-843a-02c255a9db8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\lookup">
+      <UniqueIdentifier>{29b6afaa-737d-4ac7-a26f-34f741d751f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\util">
+      <UniqueIdentifier>{ef406976-50c1-485f-8f76-877e48408e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\problem">
+      <UniqueIdentifier>{2cb027ee-1438-48e1-9493-c653698edf61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\parser">
+      <UniqueIdentifier>{6a714174-c836-4e29-800f-d8a26f41fc0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\parser\diagnose">
+      <UniqueIdentifier>{2f6e43a0-5aed-4701-a6c2-cbcf1ee84092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\excepton">
+      <UniqueIdentifier>{514f71a2-0555-4bae-ab59-d3c0f2cc6270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\parser\LPG">
+      <UniqueIdentifier>{ef59417f-986b-4b8c-bcc1-2e95509596ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\util\zip">
+      <UniqueIdentifier>{5a88a328-976f-43fa-93b4-5ddc0a594754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\semantic">
+      <UniqueIdentifier>{3645eb10-3857-4c8e-bf80-6f62f749d257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\semantic">
+      <UniqueIdentifier>{70bde535-97fd-4479-854c-83f56341a8ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\util\zip">
+      <UniqueIdentifier>{95158106-2a0c-4e72-83cf-b6f670373650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\lex">
+      <UniqueIdentifier>{6bc174d9-b74e-49d1-943c-c1b4983e74ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\lex">
+      <UniqueIdentifier>{2c1a1a23-df10-46e9-b686-463e5a397b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\parser\RecoverAst">
+      <UniqueIdentifier>{bf40bef4-d08b-4fd6-be9c-65856bc944c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\parser\RecoverAst">
+      <UniqueIdentifier>{77b365e2-648e-4881-bd80-028bdf9f5bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\core">
+      <UniqueIdentifier>{848ec66a-e224-464a-87fa-6f9bb38a5e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\jikes">
+      <UniqueIdentifier>{25b51c49-ce37-4c60-9da8-9653382f5663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\codegen">
+      <UniqueIdentifier>{0f9a1f31-a8c9-48e6-adf1-0460eb812563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\Expression">
+      <UniqueIdentifier>{1c595e07-bedd-4480-bb7b-65b7167d6e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\Expression">
+      <UniqueIdentifier>{3d030fac-0a3a-4ad7-affd-56b5e1db9044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\ast\tag">
+      <UniqueIdentifier>{0cea3df6-8216-445a-93ee-34b99ce756a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal\ast\scope">
+      <UniqueIdentifier>{698ee8a9-f8bd-456c-ab6d-e883931da39b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="JCDT_Lib\internal\classfmt\Annotation.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentAnnotation.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentArray.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentConstant.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentEnum.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentValue.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationDefaultAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationsAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\AttributeInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\BridgeAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\ClassFile.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CodeAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\ConstantPool.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\ConstantValueAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPClassInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPDoubleInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPFloatInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPIntegerInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPLongInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPMemberInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPNameAndTypeInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPStringInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\CPUtf8Info.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\DeprecatedAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\EnclosingMethodAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\ExceptionsAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\FieldInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\InnerClassesAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\LineNumberTableAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\LocalVariableTableAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\MethodInfo.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\ParameterAnnotationsAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\SignatureAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\SourceFileAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\StackMapAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\SyntheticAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="JCDT_Lib\internal\classfmt\UnknownAttribute.inl">
+      <Filter>include\internal\classfmt</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\classfmt\class.h">
+      <Filter>include\internal\classfmt</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\codegen\bytecode.h">
+      <Filter>include\internal\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\codegen\code.h">
+      <Filter>include\internal\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\config.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\platform.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\double.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\long.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\option.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\table.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\parser.h">
+      <Filter>include\internal\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\diagnose\diagnose.h">
+      <Filter>include\internal\parser\diagnose</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\diagnose\RecoveryScanner.h">
+      <Filter>include\internal\parser\diagnose</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\diagnose\RecoveryScannerData.h">
+      <Filter>include\internal\parser\diagnose</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\case.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\depend.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\segment.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\set.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\tab.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\tuple.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\zip\unzip.h">
+      <Filter>include\internal\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\zip\zip.h">
+      <Filter>include\internal\util\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\semantic\semantic.h">
+      <Filter>include\internal\semantic</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\spell.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\ast_Pre_declaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\ASTNode.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArray.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstListNode.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDeclared.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAnnotation.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAnnotationDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArguments.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArrayAccess.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArrayCreationExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArrayInitializer.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArrayType.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAssertStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAssignmentExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstBinaryExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstBlock.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstBrackets.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstBreakStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstCastExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstCatchClause.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstCharacterLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstClassBody.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstClassCreationExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstClassDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstClassLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstConditionalExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstConstructorDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstContinueStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDeclaredType.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDimExpr.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDoStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDoubleLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstEmptyDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstEmptyStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstEnumConstant.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstEnumDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstExpressionStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFalseLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFieldAccess.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFieldDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFinallyClause.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFloatLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstForeachStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFormalParameter.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstForStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstIfStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstImportDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstInitializerDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstInstanceofExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstIntegerLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstInterfaceDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstLocalClassStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstLocalVariableStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstLongLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMemberValue.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMemberValuePair.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMethodBody.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMethodDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMethodDeclarator.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMethodInvocation.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstModifierKeyword.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstModifiers.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstName.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstNullLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstPackageDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstParenthesizedExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstPostUnaryExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstPreUnaryExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstPrimitiveType.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstReturnStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstStringLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSuperCall.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSuperExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSwitchBlockStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSwitchLabel.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSwitchStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSynchronizedStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstThisCall.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstThisExpression.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstThrowStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTrueLiteral.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTryStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstType.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTypeArguments.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTypeName.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTypeParameter.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTypeParameters.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstVariableDeclarator.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstVariableDeclaratorId.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstWhileStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstWildcard.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\CaseElement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\PrimaryRepairInfo.h">
+      <Filter>include\internal\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\SecondaryRepairInfo.h">
+      <Filter>include\internal\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\JikesError.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\ParseErrorInfo.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\ParseError.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\ParseErrorCode.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\StreamError.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\ReferenceContext.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\compiler\CompilationResult.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AbstractMethodDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\CompilationUnitDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\SemanticError.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\ErrorInfo.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\ErrorString.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\problem\ProblemSeverities.h">
+      <Filter>include\internal\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lex\scanner.h">
+      <Filter>include\internal\lex</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lex\stream.h">
+      <Filter>include\internal\lex</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lex\Token.h">
+      <Filter>include\internal\lex</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstStoragePool.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\StoragePool.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\compiler\ASTVisitor.h">
+      <Filter>src\internal\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\javadcl.h">
+      <Filter>include\internal\parser\LPG</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\javadef.h">
+      <Filter>include\internal\parser\LPG</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\javaprs.h">
+      <Filter>include\internal\parser\LPG</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\javasym.h">
+      <Filter>include\internal\parser\LPG</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\lpginput.h">
+      <Filter>include\internal\parser\LPG</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\ASTVisitor.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lex\LexStream.h">
+      <Filter>include\internal\lex</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lex\Comment.h">
+      <Filter>include\internal\lex</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\PositionInterface.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\RecoverStatementsVisitor.h">
+      <Filter>include\internal\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\ImportReference.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AbstractVariableDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\ReachComleteAbleStatement.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\FileUtil.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\LookupEnvironment.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\INameEnvironment.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\compiler\Compiler.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\CharOperation.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\ArgumentExpander.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\FileHelper.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\JikesClassPaths.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\JikesOption.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\OptionError.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\exception\AstNoFound.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\AssistASTVisitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\BlockSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\DirectorySymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\FileSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\LabelSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\MethodSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\PackageSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\PathSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\SymbolTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\TypeSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\VariableSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\LiteralValue.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\Hash.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\SystemTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\DirectoryEntry.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\FoldedDirectoryEntry.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\DirectoryTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\DoubleLiteralTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\FloatLiteralTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\IntLiteralTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\LiteralLookupTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\LiteralSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\LongLiteralTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\NameLookupTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\Symbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\TypeLookupTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\Utf8LiteralTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\VariableShadowSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\MethodShadowSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\ExpandedTypeTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\ExpandedMethodTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\ITypeRequestor.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\semantic\SemanticEnvironmentStack.h">
+      <Filter>include\internal\semantic</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\semantic\SemanticEnvironment.h">
+      <Filter>include\internal\semantic</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\semantic\SymbolTableStack.h">
+      <Filter>include\internal\semantic</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\semantic\SemanticStack.h">
+      <Filter>include\internal\semantic</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\semantic\BlockStack.h">
+      <Filter>include\internal\semantic</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\semantic\DefiniteFinalAssignmentStack.h">
+      <Filter>include\internal\semantic</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\semantic\DefiniteBlockStack.h">
+      <Filter>include\internal\semantic</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\TypeShadowSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\classfmt\Operators.h">
+      <Filter>include\internal\classfmt</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\codegen\Label.h">
+      <Filter>include\internal\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\codegen\MethodStack.h">
+      <Filter>include\internal\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\FileBase.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\jikes\JavaArgumentPathUtil.h">
+      <Filter>include\jikes</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\jikes\jikesapi.h">
+      <Filter>include\jikes</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\BindingSymbolTable.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\NameSymbol.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\FileLocation.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\core\IProgressMonitor.hpp">
+      <Filter>include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\DirectoryZip.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\codegen\Signature.h">
+      <Filter>include\internal\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\AccessFlagsUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\PerThreadObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AssignmentExpressionTag.h">
+      <Filter>include\internal\ast\tag</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\BinaryExpressionTag.h">
+      <Filter>include\internal\ast\tag</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\PostUnaryExpressionTag.h">
+      <Filter>include\internal\ast\tag</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\PreUnaryExpressionTag.h">
+      <Filter>include\internal\ast\tag</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\impl\access.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\ClassFileReader.h">
+      <Filter>include\internal\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\StringConstant.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\U_chars.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\typedef.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\IntToString.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\IntToWstring.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\LongToString.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\DoubleToString.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\FloatToString.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\env\Ostream.h">
+      <Filter>include\internal\env</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAnonymousTypeDeclaration.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\ExplicitConstructorCall.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\stringex.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\parser\ParserUtil.h">
+      <Filter>include\internal\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\AstNodeScope.h">
+      <Filter>include\internal\ast\scope</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\InvocationSite.h">
+      <Filter>include\internal\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\ast\ScopeUtil.h">
+      <Filter>include\internal\ast\scope</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\UnitFileSymbol.h">
+      <Filter>include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\lookup\TypeHeaderInfo.h">
+      <Filter>src\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JCDT_Lib\internal\util\FileLoader.h">
+      <Filter>include\internal\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\body.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\decl.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\definite.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\expr.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\init.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\modifier.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\case.cpp">
+      <Filter>src\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\depend.cpp">
+      <Filter>src\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\segment.cpp">
+      <Filter>src\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\set.cpp">
+      <Filter>src\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\tab.cpp">
+      <Filter>src\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\zip\unzip.cpp">
+      <Filter>src\internal\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\zip\zip.cpp">
+      <Filter>src\internal\util\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\op.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\codegen\bytecode.cpp">
+      <Filter>src\internal\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\codegen\code.cpp">
+      <Filter>src\internal\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\platform.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\double.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\long.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\option.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\dump.cpp">
+      <Filter>src\internal\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\lpginput.cpp">
+      <Filter>src\internal\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\parser.cpp">
+      <Filter>src\internal\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\diagnose\diagnose.cpp">
+      <Filter>src\internal\parser\diagnose</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\diagnose\RecoveryScanner.cpp">
+      <Filter>src\internal\parser\diagnose</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\ParseErrorInfo.cpp">
+      <Filter>src\internal\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\ohter.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\SemanticError.cpp">
+      <Filter>src\internal\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\ErrorString.cpp">
+      <Filter>src\internal\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\ErrorInfo.cpp">
+      <Filter>src\internal\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\ParseError.cpp">
+      <Filter>src\internal\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lex\scanner.cpp">
+      <Filter>src\internal\lex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lex\stream.cpp">
+      <Filter>src\internal\lex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lex\Token.cpp">
+      <Filter>src\internal\lex</Filter>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\internal\parser\LPG\consumeRule.cpp">
+      <Filter>include\internal\parser\LPG</Filter>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\internal\parser\LPG\javaact.cpp">
+      <Filter>include\internal\parser\LPG</Filter>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\internal\parser\ParseReduce.cpp">
+      <Filter>include\internal\parser\LPG</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\StreamError.cpp">
+      <Filter>src\internal\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lex\LexStream.cpp">
+      <Filter>src\internal\lex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\FileUtil.cpp">
+      <Filter>src\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\LookupEnvironment.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\INameEnvironment.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compiler\Compiler.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\CharOperation.cpp">
+      <Filter>src\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\ArgumentExpander.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\JikesOption.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\OptionError.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\incrmnt.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\system.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\Semantic.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\jikes\JavaArgumentPathUtil.cpp">
+      <Filter>include\jikes</Filter>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\jikes\jikesapi.cpp">
+      <Filter>include\jikes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\NameSymbol.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\FileLocation.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\FileBase.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\SymbolTableStack.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\BindingSymbolTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\BlockSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\DirectoryEntry.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\DirectorySymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\DirectoryTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\DoubleLiteralTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\ExpandedFieldTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\ExpandedMethodTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\ExpandedTypeTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\FileSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\FloatLiteralTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\IntLiteralTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\LiteralLookupTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\LongLiteralTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\MethodShadowSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\MethodSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\NameLookupTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\PackageSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\PathSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\SymbolTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\SystemTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\TypeLookupTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\TypeShadowSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\TypeSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\Utf8LiteralTable.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\VariableShadowSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\VariableSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\about_class.cpp">
+      <Filter>src\internal\semantic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\DirectoryZip.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\codegen\Signature.cpp">
+      <Filter>src\internal\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstAnnotation_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstAnnotationDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstArguments_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstArrayAccess_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstArrayCreationExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstArrayInitializer_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstArrayType_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstAssertStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstAssignmentExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstBinaryExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstBlock_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstBrackets_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstBreakStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstCastExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstCatchClause_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstCharacterLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstClassBody_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstClassCreationExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstClassDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstClassLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstConditionalExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstConstructorDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstContinueStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstDeclared_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstDimExpr_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstDoStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstDoubleLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstEmptyDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstEmptyStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstEnumConstant_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstEnumDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstExpressionStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstFalseLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstFieldAccess_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstFieldDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstFinallyClause_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstFloatLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstForeachStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstFormalParameter_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstForStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstIfStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstImportDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstInitializerDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstInstanceofExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstIntegerLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstInterfaceDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstListNode_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstLocalClassStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstLocalVariableStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstLongLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstMemberValue_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstMemberValuePair_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstMethodBody_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstMethodDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstMethodDeclarator_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstMethodInvocation_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstModifierKeyword_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstModifiers_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstName_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\ASTNode_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstNullLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstPackageDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstParenthesizedExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstPostUnaryExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstPreUnaryExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstPrimitiveType_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstReturnStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstStringLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstSuperCall_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstSuperExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstSwitchBlockStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstSwitchLabel_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstSwitchStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstSynchronizedStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstThisCall_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstThisExpression_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstThrowStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstTrueLiteral_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstTryStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstTypeArguments_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstTypeName_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstTypeParameter_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstTypeParameters_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstVariableDeclarator_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstVariableDeclaratorId_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstWhileStatement_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstWildcard_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\CompilationUnitDeclaration_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\StoragePool_def.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstDeclaredType.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\VariableSymbolArray.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\ImportReference.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\ClassFileReader.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\StringConstant.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\IntToString.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\IntToWstring.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\DoubleToString.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\FloatToString.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\LongToString.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\Ostream.cpp">
+      <Filter>src\internal\env</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AstAnonymousType.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\ConstantPool.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPClassInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPMemberInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPStringInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPIntegerInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPFloatInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPLongInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPDoubleInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPNameAndTypeInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CPUtf8Info.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\ClassFile.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\FieldInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\MethodInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\AttributeInfo.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\UnknownAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\ConstantValueAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\CodeAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\ExceptionsAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\InnerClassesAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\SyntheticAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\LineNumberTableAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\LocalVariableTableAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\DeprecatedAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\SignatureAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\BridgeAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\StackMapAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentValue.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentConstant.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentEnum.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentAnnotation.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentArray.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\Annotation.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\AnnotationsAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\ParameterAnnotationsAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\AnnotationDefaultAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\EnclosingMethodAttribute.cpp">
+      <Filter>src\internal\classfmt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AbstractMethodDeclaration.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\internal\parser\ParserUtil.cpp">
+      <Filter>src\internal\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\ScopeUtil.cpp">
+      <Filter>src\internal\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\internal\lookup\UnitFileSymbol.cpp">
+      <Filter>src\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\FileLoader.cpp">
+      <Filter>src\internal\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\AccessFlags.cpp">
+      <Filter>src\internal\impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

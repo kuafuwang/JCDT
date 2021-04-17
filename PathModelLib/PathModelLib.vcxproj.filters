@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="scr">
+      <UniqueIdentifier>{ab91923c-1a96-4361-bb60-e0ef9b164e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scr\JarPath">
+      <UniqueIdentifier>{72b3f94c-c003-415a-b8e5-b1e91820a3d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scr\ClassPath">
+      <UniqueIdentifier>{08bd0fab-8965-4a9c-a06f-2b52b147023a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scr\Util">
+      <UniqueIdentifier>{837a7f2d-78df-4c2e-a836-07bbd1c492a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scr\DeltaPath">
+      <UniqueIdentifier>{41cb8302-14a9-4106-b4e2-55d11e5106cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scr\MosesPath">
+      <UniqueIdentifier>{5b083491-6030-4568-adba-eef5a6f0127b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scr\SourcePath">
+      <UniqueIdentifier>{d2613e94-7b7f-4d0d-9404-293b10b38ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scr\impl">
+      <UniqueIdentifier>{93743780-3a62-4350-bd5e-a5dcb64bc7d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="PathModelLib\JarPath\JarPathManager.h">
+      <Filter>scr\JarPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\JarPath\JarPackageRoot.h">
+      <Filter>scr\JarPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\JarPath\IOpenable.h">
+      <Filter>scr\JarPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\JarPath\ClassFile.h">
+      <Filter>scr\JarPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\JarPath\JarPackage.h">
+      <Filter>scr\JarPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\JarPath\JavaZip.h">
+      <Filter>scr\JarPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\ClasspathContainer.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\ClasspathEntry.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\ContainersCtrl.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\IClasspathContainer.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\IClasspathEntry.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\Util\PathUtil.h">
+      <Filter>scr\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\Util\DependencyUtil.h">
+      <Filter>scr\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\BaseCompilerEnvManager.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\DeltaPath\NameLookUpNotify.h">
+      <Filter>scr\DeltaPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\DeltaPath\ResouceOptStack.h">
+      <Filter>scr\DeltaPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\MosesPath\MosesPath.h">
+      <Filter>scr\MosesPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\SourcePath\CompilationUnitTypInfo.h">
+      <Filter>scr\SourcePath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\SourcePath\UnitManager.h">
+      <Filter>scr\SourcePath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\IConverterContainer.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\ConverterContainer.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+    <ClInclude Include="PathModelLib\ClassPath\SimulatorConfig.h">
+      <Filter>scr\ClassPath</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="PathModelLib\JarPath\JarPathManager.cpp">
+      <Filter>scr\JarPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\JarPath\JarPackageRoot.cpp">
+      <Filter>scr\JarPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\JarPath\IOpenable.cpp">
+      <Filter>scr\JarPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\JarPath\ClassFile.cpp">
+      <Filter>scr\JarPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\JarPath\JarPackage.cpp">
+      <Filter>scr\JarPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\JarPath\JavaZip.cpp">
+      <Filter>scr\JarPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\ClassPath\ClasspathContainer.cpp">
+      <Filter>scr\ClassPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\ClassPath\ContainersCtrl.cpp">
+      <Filter>scr\ClassPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\Util\PathUtil.cpp">
+      <Filter>scr\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\ClassPath\BaseCompilerEnvManager.cpp">
+      <Filter>scr\ClassPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\DeltaPath\NameLookUpNotify.cpp">
+      <Filter>scr\DeltaPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\DeltaPath\ResouceOptStack.cpp">
+      <Filter>scr\DeltaPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\MosesPath\MosesPath.cpp">
+      <Filter>scr\MosesPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\SourcePath\CompilationUnitTypInfo.cpp">
+      <Filter>scr\SourcePath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\SourcePath\UnitManager.cpp">
+      <Filter>scr\SourcePath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\ClassPath\ClasspathEntry.cpp">
+      <Filter>scr\ClassPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\ClassPath\ConverterContainer.cpp">
+      <Filter>scr\ClassPath</Filter>
+    </ClCompile>
+    <ClCompile Include="PathModelLib\ClassPath\SimulatorConfig.cpp">
+      <Filter>scr\ClassPath</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

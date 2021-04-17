@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Proposal">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Processor">
+      <UniqueIdentifier>{c06ab74e-57b6-4598-8107-382dae218975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{f189fbb6-7ddd-4ee4-ba93-aa8a5c4f75f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Processor\JavaCorrectionProcessor.h">
+      <Filter>Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Processor\LocalCorrectionsSubProcessor.h">
+      <Filter>Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Processor\ReorgCorrectionsSubProcessor.h">
+      <Filter>Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Processor\UnresolvedElementsSubProcessor.h">
+      <Filter>Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\CorrectPackageDeclarationProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\InsertCorrectionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\NewCUCompletionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\NewMethodCompletionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\ReplaceCorrectionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\CorrectionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\ProblemPosition.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\CorrectionAssistASTVisitor.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\CorreectioniEngine.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\SimilarElement.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\SimilarElementsRequestor.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\JavaModelUtil.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\ProjrctSetupCorrectionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\NameMatcher.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\TypeSearchRequestor.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\core\ASTResolving.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\ChangeTypeNameCorrectionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\RenameCUCompletionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Processor\ImportEditCtrl.h">
+      <Filter>Processor</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\MultipleReplaceCorrectionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\MultipleNewMethodCorrectionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeCorrectionLib\Proposal\MultipleInsertCorrectionProposal.h">
+      <Filter>Proposal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Processor\JavaCorrectionProcessor.cpp">
+      <Filter>Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Processor\LocalCorrectionsSubProcessor.cpp">
+      <Filter>Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Processor\ReorgCorrectionsSubProcessor.cpp">
+      <Filter>Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Processor\UnresolvedElementsSubProcessor.cpp">
+      <Filter>Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\CorrectPackageDeclarationProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\InsertCorrectionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\NewCUCompletionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\NewMethodCompletionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\ReplaceCorrectionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\CorrectionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\core\ProblemPosition.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\core\CorrectionAssistASTVisitor.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\core\SimilarElement.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\core\SimilarElementsRequestor.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\core\JavaModelUtil.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\ProjrctSetupCorrectionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\core\TypeSearchRequestor.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\core\ASTResolving.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Processor\ImportEditCtrl.cpp">
+      <Filter>Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\MultipleReplaceCorrectionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\MultipleNewMethodCorrectionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\Proposal\MultipleInsertCorrectionProposal.cpp">
+      <Filter>Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeCorrectionLib\core\NameMatcher.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

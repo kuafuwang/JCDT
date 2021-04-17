@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5234D92C-9C75-48EC-9E16-8EDCE708AE3C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>JCDT</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\icu4c-50_1_1-Win32-msvc10\icu\include;.\;$(IncludePath)</IncludePath>
+    <TargetName>JCDTLibMDD</TargetName>
+    <OutDir>..\Our_lib_V3</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Our_lib_V3</OutDir>
+    <TargetName>JCDTLibMD</TargetName>
+    <IncludePath>..\icu4c-50_1_1-Win32-msvc10\icu\include;.\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="JCDT_Lib\internal\classfmt\Annotation.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentAnnotation.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentArray.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentConstant.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentEnum.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationComponentValue.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationDefaultAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\AnnotationsAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\AttributeInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\BridgeAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\ClassFile.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CodeAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\ConstantPool.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\ConstantValueAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPClassInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPDoubleInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPFloatInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPIntegerInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPLongInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPMemberInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPNameAndTypeInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPStringInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\CPUtf8Info.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\DeprecatedAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\EnclosingMethodAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\ExceptionsAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\FieldInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\InnerClassesAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\LineNumberTableAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\LocalVariableTableAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\MethodInfo.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\ParameterAnnotationsAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\SignatureAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\SourceFileAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\StackMapAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\SyntheticAttribute.inl" />
+    <None Include="JCDT_Lib\internal\classfmt\UnknownAttribute.inl" />
+    <None Include="packages.config" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JCDT_Lib\compiler\CompilationResult.h" />
+    <ClInclude Include="JCDT_Lib\compiler\Compiler.h" />
+    <ClInclude Include="JCDT_Lib\exception\AstNoFound.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AbstractMethodDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AbstractVariableDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AssignmentExpressionTag.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAnnotation.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAnnotationDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAnonymousTypeDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArguments.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArray.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArrayAccess.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArrayCreationExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArrayInitializer.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstArrayType.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAssertStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstAssignmentExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstBinaryExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstBlock.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstBrackets.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstBreakStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstCastExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstCatchClause.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstCharacterLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstClassBody.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstClassCreationExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstClassDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstClassLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstNodeScope.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\BinaryExpressionTag.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\CompilationUnitDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstConditionalExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstConstructorDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstContinueStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDeclared.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDeclaredType.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDimExpr.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDoStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstDoubleLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstEmptyDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstEmptyStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstEnumConstant.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstEnumDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstExpressionStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFalseLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFieldAccess.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFieldDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFinallyClause.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFloatLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstForeachStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstFormalParameter.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstForStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstIfStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstImportDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstInitializerDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstInstanceofExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstIntegerLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstInterfaceDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstListNode.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstLocalClassStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstLocalVariableStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstLongLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMemberValue.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMemberValuePair.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMethodBody.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMethodDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMethodDeclarator.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstMethodInvocation.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstModifierKeyword.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstModifiers.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstName.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\ASTNode.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstNullLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstPackageDeclaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstParenthesizedExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstPostUnaryExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstPreUnaryExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstPrimitiveType.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstReturnStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\ExplicitConstructorCall.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\InvocationSite.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\PostUnaryExpressionTag.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\PreUnaryExpressionTag.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\ReachComleteAbleStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstStringLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSuperCall.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSuperExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSwitchBlockStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSwitchLabel.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSwitchStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstSynchronizedStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstThisCall.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstThisExpression.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstThrowStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTrueLiteral.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTryStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstType.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTypeArguments.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTypeName.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTypeParameter.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstTypeParameters.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstVariableDeclarator.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstVariableDeclaratorId.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstWhileStatement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstWildcard.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\ast_Pre_declaration.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\CaseElement.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\AstStoragePool.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\ImportReference.h" />
+    <ClInclude Include="JCDT_Lib\internal\ast\ScopeUtil.h" />
+    <ClInclude Include="JCDT_Lib\internal\classfmt\class.h" />
+    <ClInclude Include="JCDT_Lib\internal\classfmt\Operators.h" />
+    <ClInclude Include="JCDT_Lib\internal\codegen\bytecode.h" />
+    <ClInclude Include="JCDT_Lib\internal\codegen\code.h" />
+    <ClInclude Include="JCDT_Lib\internal\codegen\Label.h" />
+    <ClInclude Include="JCDT_Lib\internal\codegen\MethodStack.h" />
+    <ClInclude Include="JCDT_Lib\internal\codegen\Signature.h" />
+    <ClInclude Include="JCDT_Lib\internal\compiler\ASTVisitor.h" />
+    <ClInclude Include="JCDT_Lib\internal\core\IProgressMonitor.hpp" />
+    <ClInclude Include="JCDT_Lib\internal\env\ClassFileReader.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\config.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\DirectoryZip.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\DoubleToString.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\FloatToString.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\INameEnvironment.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\IntToString.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\IntToWstring.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\LongToString.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\LookupEnvironment.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\Ostream.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\platform.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\StringConstant.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\typedef.h" />
+    <ClInclude Include="JCDT_Lib\internal\env\U_chars.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\access.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\ArgumentExpander.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\double.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\FileBase.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\FileHelper.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\FileLocation.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\ITypeRequestor.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\JikesClassPaths.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\JikesOption.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\long.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\NameSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\option.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\OptionError.h" />
+    <ClInclude Include="JCDT_Lib\internal\impl\ReferenceContext.h" />
+    <ClInclude Include="JCDT_Lib\internal\lex\Comment.h" />
+    <ClInclude Include="JCDT_Lib\internal\lex\LexStream.h" />
+    <ClInclude Include="JCDT_Lib\internal\lex\scanner.h" />
+    <ClInclude Include="JCDT_Lib\internal\lex\stream.h" />
+    <ClInclude Include="JCDT_Lib\internal\lex\Token.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\AssistASTVisitor.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\ASTVisitor.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\BindingSymbolTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\BlockSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\DirectoryEntry.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\DirectorySymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\DirectoryTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\DoubleLiteralTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\ExpandedMethodTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\ExpandedTypeTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\FileSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\FloatLiteralTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\FoldedDirectoryEntry.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\Hash.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\IntLiteralTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\LabelSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\LiteralLookupTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\LiteralSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\LiteralValue.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\LongLiteralTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\MethodShadowSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\MethodSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\NameLookupTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\PackageSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\PathSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\PositionInterface.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\Symbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\SymbolTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\SystemTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\table.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\TypeHeaderInfo.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\TypeLookupTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\TypeShadowSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\TypeSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\UnitFileSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\Utf8LiteralTable.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\VariableShadowSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\lookup\VariableSymbol.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\diagnose\diagnose.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\diagnose\RecoveryScanner.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\diagnose\RecoveryScannerData.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\javadcl.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\javadef.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\javaprs.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\javasym.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\LPG\lpginput.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\parser.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\ParserUtil.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\PrimaryRepairInfo.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\RecoverStatementsVisitor.h" />
+    <ClInclude Include="JCDT_Lib\internal\parser\SecondaryRepairInfo.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\ErrorInfo.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\ErrorString.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\JikesError.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\ParseError.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\ParseErrorCode.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\ParseErrorInfo.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\ProblemSeverities.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\SemanticError.h" />
+    <ClInclude Include="JCDT_Lib\internal\problem\StreamError.h" />
+    <ClInclude Include="JCDT_Lib\internal\semantic\BlockStack.h" />
+    <ClInclude Include="JCDT_Lib\internal\semantic\DefiniteBlockStack.h" />
+    <ClInclude Include="JCDT_Lib\internal\semantic\DefiniteFinalAssignmentStack.h" />
+    <ClInclude Include="JCDT_Lib\internal\semantic\semantic.h" />
+    <ClInclude Include="JCDT_Lib\internal\semantic\SemanticEnvironment.h" />
+    <ClInclude Include="JCDT_Lib\internal\semantic\SemanticEnvironmentStack.h" />
+    <ClInclude Include="JCDT_Lib\internal\semantic\SemanticStack.h" />
+    <ClInclude Include="JCDT_Lib\internal\semantic\SymbolTableStack.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\AccessFlagsUtil.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\case.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\CharOperation.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\depend.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\FileLoader.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\FileUtil.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\PerThreadObject.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\segment.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\set.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\spell.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\StoragePool.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\stringex.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\tab.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\tuple.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\zip\unzip.h" />
+    <ClInclude Include="JCDT_Lib\internal\util\zip\zip.h" />
+    <ClInclude Include="JCDT_Lib\jikes\JavaArgumentPathUtil.h" />
+    <ClInclude Include="JCDT_Lib\jikes\jikesapi.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JCDT_Lib\internal\lookup\UnitFileSymbol.cpp" />
+    <ClCompile Include="JCDT_Lib\internal\parser\LPG\consumeRule.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\internal\parser\LPG\javaact.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\internal\parser\ParseReduce.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="JCDT_Lib\internal\parser\ParserUtil.cpp" />
+    <ClCompile Include="JCDT_Lib\jikes\JavaArgumentPathUtil.cpp" />
+    <ClCompile Include="JCDT_Lib\jikes\jikesapi.cpp" />
+    <ClCompile Include="src\compiler\Compiler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\ast\AbstractMethodDeclaration.cpp" />
+    <ClCompile Include="src\internal\ast\AstAnnotationDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstAnnotation_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstAnonymousType.cpp" />
+    <ClCompile Include="src\internal\ast\AstArguments_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstArrayAccess_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstArrayCreationExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstArrayInitializer_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstArrayType_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstAssertStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstAssignmentExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstBinaryExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstBlock_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstBrackets_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstBreakStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstCastExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstCatchClause_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstCharacterLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstClassBody_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstClassCreationExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstClassDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstClassLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstConditionalExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstConstructorDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstContinueStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstDeclaredType.cpp" />
+    <ClCompile Include="src\internal\ast\AstDeclared_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstDimExpr_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstDoStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstDoubleLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstEmptyDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstEmptyStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstEnumConstant_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstEnumDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstExpressionStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstFalseLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstFieldAccess_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstFieldDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstFinallyClause_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstFloatLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstForeachStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstFormalParameter_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstForStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstIfStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstImportDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstInitializerDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstInstanceofExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstIntegerLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstInterfaceDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstListNode_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstLocalClassStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstLocalVariableStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstLongLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstMemberValuePair_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstMemberValue_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstMethodBody_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstMethodDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstMethodDeclarator_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstMethodInvocation_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstModifierKeyword_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstModifiers_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstName_def.cpp" />
+    <ClCompile Include="src\internal\ast\ASTNode_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstNullLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstPackageDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstParenthesizedExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstPostUnaryExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstPreUnaryExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstPrimitiveType_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstReturnStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstStringLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstSuperCall_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstSuperExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstSwitchBlockStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstSwitchLabel_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstSwitchStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstSynchronizedStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstThisCall_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstThisExpression_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstThrowStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstTrueLiteral_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstTryStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstTypeArguments_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstTypeName_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstTypeParameters_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstTypeParameter_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstVariableDeclaratorId_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstVariableDeclarator_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstWhileStatement_def.cpp" />
+    <ClCompile Include="src\internal\ast\AstWildcard_def.cpp" />
+    <ClCompile Include="src\internal\ast\CompilationUnitDeclaration_def.cpp" />
+    <ClCompile Include="src\internal\ast\ImportReference.cpp" />
+    <ClCompile Include="src\internal\ast\ScopeUtil.cpp" />
+    <ClCompile Include="src\internal\ast\StoragePool_def.cpp" />
+    <ClCompile Include="src\internal\classfmt\Annotation.cpp" />
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentAnnotation.cpp" />
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentArray.cpp" />
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentConstant.cpp" />
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentEnum.cpp" />
+    <ClCompile Include="src\internal\classfmt\AnnotationComponentValue.cpp" />
+    <ClCompile Include="src\internal\classfmt\AnnotationDefaultAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\AnnotationsAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\AttributeInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\BridgeAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\EnclosingMethodAttribute.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\ClassFile.cpp" />
+    <ClCompile Include="src\internal\classfmt\CodeAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\ConstantPool.cpp" />
+    <ClCompile Include="src\internal\classfmt\ConstantValueAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPClassInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPDoubleInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPFloatInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPIntegerInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPLongInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPMemberInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPNameAndTypeInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPStringInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\CPUtf8Info.cpp" />
+    <ClCompile Include="src\internal\classfmt\DeprecatedAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\ExceptionsAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\FieldInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\InnerClassesAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\LineNumberTableAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\LocalVariableTableAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\MethodInfo.cpp" />
+    <ClCompile Include="src\internal\classfmt\op.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\classfmt\ParameterAnnotationsAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\SignatureAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\StackMapAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\SyntheticAttribute.cpp" />
+    <ClCompile Include="src\internal\classfmt\UnknownAttribute.cpp" />
+    <ClCompile Include="src\internal\codegen\bytecode.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\codegen\code.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\codegen\Signature.cpp" />
+    <ClCompile Include="src\internal\env\ClassFileReader.cpp" />
+    <ClCompile Include="src\internal\env\DirectoryZip.cpp" />
+    <ClCompile Include="src\internal\env\DoubleToString.cpp" />
+    <ClCompile Include="src\internal\env\FloatToString.cpp" />
+    <ClCompile Include="src\internal\env\INameEnvironment.cpp" />
+    <ClCompile Include="src\internal\env\incrmnt.cpp" />
+    <ClCompile Include="src\internal\env\IntToString.cpp" />
+    <ClCompile Include="src\internal\env\IntToWstring.cpp" />
+    <ClCompile Include="src\internal\env\LongToString.cpp" />
+    <ClCompile Include="src\internal\env\LookupEnvironment.cpp" />
+    <ClCompile Include="src\internal\env\Ostream.cpp" />
+    <ClCompile Include="src\internal\env\platform.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\env\StringConstant.cpp" />
+    <ClCompile Include="src\internal\env\system.cpp" />
+    <ClCompile Include="src\internal\impl\AccessFlags.cpp" />
+    <ClCompile Include="src\internal\impl\ArgumentExpander.cpp" />
+    <ClCompile Include="src\internal\impl\double.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\FileBase.cpp" />
+    <ClCompile Include="src\internal\impl\FileLocation.cpp" />
+    <ClCompile Include="src\internal\impl\JikesOption.cpp" />
+    <ClCompile Include="src\internal\impl\long.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\NameSymbol.cpp" />
+    <ClCompile Include="src\internal\impl\option.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\impl\OptionError.cpp" />
+    <ClCompile Include="src\internal\lex\LexStream.cpp" />
+    <ClCompile Include="src\internal\lex\scanner.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\lex\stream.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\lex\Token.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\lookup\BindingSymbolTable.cpp" />
+    <ClCompile Include="src\internal\lookup\BlockSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\DirectoryEntry.cpp" />
+    <ClCompile Include="src\internal\lookup\DirectorySymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\DirectoryTable.cpp" />
+    <ClCompile Include="src\internal\lookup\DoubleLiteralTable.cpp" />
+    <ClCompile Include="src\internal\lookup\ExpandedFieldTable.cpp" />
+    <ClCompile Include="src\internal\lookup\ExpandedMethodTable.cpp" />
+    <ClCompile Include="src\internal\lookup\ExpandedTypeTable.cpp" />
+    <ClCompile Include="src\internal\lookup\FileSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\FloatLiteralTable.cpp" />
+    <ClCompile Include="src\internal\lookup\IntLiteralTable.cpp" />
+    <ClCompile Include="src\internal\lookup\LiteralLookupTable.cpp" />
+    <ClCompile Include="src\internal\lookup\LongLiteralTable.cpp" />
+    <ClCompile Include="src\internal\lookup\MethodShadowSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\MethodSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\NameLookupTable.cpp" />
+    <ClCompile Include="src\internal\lookup\PackageSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\PathSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\SymbolTable.cpp" />
+    <ClCompile Include="src\internal\lookup\SystemTable.cpp" />
+    <ClCompile Include="src\internal\lookup\TypeLookupTable.cpp" />
+    <ClCompile Include="src\internal\lookup\TypeShadowSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\TypeSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\Utf8LiteralTable.cpp" />
+    <ClCompile Include="src\internal\lookup\VariableShadowSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\VariableSymbol.cpp" />
+    <ClCompile Include="src\internal\lookup\VariableSymbolArray.cpp" />
+    <ClCompile Include="src\internal\parser\diagnose\diagnose.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\diagnose\RecoveryScanner.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\dump.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\lpginput.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\parser\parser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\ErrorInfo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\ErrorString.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\ParseError.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\ParseErrorInfo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\SemanticError.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\problem\StreamError.cpp" />
+    <ClCompile Include="src\internal\semantic\body.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\about_class.cpp" />
+    <ClCompile Include="src\internal\semantic\decl.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\definite.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\expr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\init.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\modifier.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\ohter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\semantic\Semantic.cpp" />
+    <ClCompile Include="src\internal\semantic\SymbolTableStack.cpp" />
+    <ClCompile Include="src\internal\util\case.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\CharOperation.cpp" />
+    <ClCompile Include="src\internal\util\depend.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\FileLoader.cpp" />
+    <ClCompile Include="src\internal\util\FileUtil.cpp" />
+    <ClCompile Include="src\internal\util\segment.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\set.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\tab.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\zip\unzip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\internal\util\zip\zip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\boost.1.69.0.0\build\boost.targets" Condition="Exists('..\packages\boost.1.69.0.0\build\boost.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\boost.1.69.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.69.0.0\build\boost.targets'))" />
+  </Target>
+</Project>

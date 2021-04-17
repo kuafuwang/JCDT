@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ba5ab56f-5824-485c-a0e2-9ab178091137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal">
+      <UniqueIdentifier>{811ff363-7066-465f-939f-e2bf5585a7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\core">
+      <UniqueIdentifier>{a2c956ee-e4b2-429a-a0d0-402b0fd9ebc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\core\interface">
+      <UniqueIdentifier>{cb32bdf4-9495-49a9-a87c-7d404908c6e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\pattern">
+      <UniqueIdentifier>{59c39c74-9269-44b2-9e4c-6e3d739b625d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\pattern\include">
+      <UniqueIdentifier>{a1646190-b1df-4d58-9aa5-c60f07855a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\pattern\src">
+      <UniqueIdentifier>{7c1c483e-327f-41ce-a2fb-c927564de9ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\matching">
+      <UniqueIdentifier>{c81ab96b-f128-4acb-8692-a023ef84ed6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\index">
+      <UniqueIdentifier>{86debac9-d6f7-44e0-9b75-319d2a153321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\TypeHierarchy">
+      <UniqueIdentifier>{15f17b1f-d028-4a4b-aac9-efce9eca28e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\internal\Statistics">
+      <UniqueIdentifier>{8e424389-7482-429e-9932-7fc12ab29f98}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SearchLib\internal\core\JavaSearchScope.h">
+      <Filter>src\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\matching\MatchLocator.h">
+      <Filter>src\internal\matching</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\matching\MatchSet.h">
+      <Filter>src\internal\matching</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\IJavaSearchConstants.h">
+      <Filter>src\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\IJavaSearchResultCollector.h">
+      <Filter>src\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\IJavaSearchScope.h">
+      <Filter>src\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\IJob.h">
+      <Filter>src\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\ISearchPattern.h">
+      <Filter>src\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\ITypeNameRequestor.h">
+      <Filter>src\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\SearchEngine.h">
+      <Filter>src\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\AndPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\ConstructorDeclarationPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\ConstructorReferencePattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\DeclarationOfAccessedFieldsPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\DeclarationOfReferencedMethodsPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\DeclarationOfReferencedTypesPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\FieldDeclarationPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\FieldReferencePattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\MethodDeclarationPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\MethodPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\MethodReferencePattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\MultipleSearchPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\OrPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\PackageDeclarationPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\PackageReferencePattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\QualifiedTypeDeclarationPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\SearchPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\SearchPatternFactory.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\SuperInterfaceReferencePattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\SuperTypeReferencePattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\TypeDeclarationPattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\TypeReferencePattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\IIndexConstants.h">
+      <Filter>src\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\matching\MatchingOpenable.h">
+      <Filter>src\internal\matching</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\matching\MatchLocatorParserVisitor.h">
+      <Filter>src\internal\matching</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\matching\LocatorCompiler.h">
+      <Filter>src\internal\matching</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\CallHierarcky.h">
+      <Filter>src\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\JavaSearchScopeData.h">
+      <Filter>src\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\core\CallHierarckyCollector.h">
+      <Filter>src\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\pattern\LocalFieldReferencePattern.h">
+      <Filter>src\internal\pattern\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\matching\SuperTypeNamesCollector.h">
+      <Filter>src\internal\matching</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\matching\SearchResultNode.h">
+      <Filter>src\internal\matching</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\TypeHierarchy\TypeHierarchy.h">
+      <Filter>src\internal\TypeHierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\Statistics\StatisticsEngine.h">
+      <Filter>src\internal\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\Statistics\ReferenceVisitor.h">
+      <Filter>src\internal\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\Statistics\StatisticsMgr.h">
+      <Filter>src\internal\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchLib\internal\Statistics\FindReferenceOption.h">
+      <Filter>src\internal\Statistics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SearchLib\internal\core\JavaSearchScope.cpp">
+      <Filter>src\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\matching\MatchLocator.cpp">
+      <Filter>src\internal\matching</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\matching\MatchSet.cpp">
+      <Filter>src\internal\matching</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\core\SearchEngine.cpp">
+      <Filter>src\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\AndPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\ConstructorDeclarationPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\ConstructorReferencePattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\DeclarationOfAccessedFieldsPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\DeclarationOfReferencedMethodsPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\DeclarationOfReferencedTypesPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\FieldDeclarationPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\FieldReferencePattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\MethodDeclarationPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\MethodPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\MethodReferencePattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\MultipleSearchPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\OrPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\PackageDeclarationPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\PackageReferencePattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\QualifiedTypeDeclarationPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\SearchPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\SearchPatternFactory.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\SuperInterfaceReferencePattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\SuperTypeReferencePattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\TypeDeclarationPattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\TypeReferencePattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\matching\MatchingOpenable.cpp">
+      <Filter>src\internal\matching</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\core\IIndexConstants.cpp">
+      <Filter>src\internal\core\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\matching\MatchLocatorParserVisitor.cpp">
+      <Filter>src\internal\matching</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\matching\LocatorCompiler.cpp">
+      <Filter>src\internal\matching</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\core\CallHierarcky.cpp">
+      <Filter>src\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\core\JavaSearchScopeData.cpp">
+      <Filter>src\internal\core\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\pattern\LocalFieldReferencePattern.cpp">
+      <Filter>src\internal\pattern\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\matching\SuperTypeNamesCollector.cpp">
+      <Filter>src\internal\matching</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\core\CallHierarckyCollector.cpp">
+      <Filter>src\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\matching\SearchResultNode.cpp">
+      <Filter>src\internal\matching</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\TypeHierarchy\TypeHierarchy.cpp">
+      <Filter>src\internal\TypeHierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\Statistics\StatisticsEngine.cpp">
+      <Filter>src\internal\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\Statistics\ReferenceVisitor.cpp">
+      <Filter>src\internal\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\Statistics\StatisticsMgr.cpp">
+      <Filter>src\internal\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchLib\internal\Statistics\ZeroReferenceVisitor.cpp">
+      <Filter>src\internal\Statistics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

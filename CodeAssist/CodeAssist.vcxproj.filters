@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="impl">
+      <UniqueIdentifier>{80d92a68-591c-477b-9f14-0b8ef6133ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="select">
+      <UniqueIdentifier>{3a861eeb-2cea-4140-af33-e66707fd517d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ast">
+      <UniqueIdentifier>{f3eebc78-ea75-4985-accb-742e0528d16d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="complete">
+      <UniqueIdentifier>{4f3a6982-4b6f-4f4c-bef2-80f3ba36452c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="complete\Proposal">
+      <UniqueIdentifier>{314e5a57-a96c-4b50-8535-2ac87597104c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="complete\Proposal\KeyWord">
+      <UniqueIdentifier>{7d3f805b-0b79-4829-9526-73686022a36b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\FindAstNode.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\Engine.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\SelectionEngine.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\SelectionOnNameReference.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\SelectAssistASTVisitor.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\CodeAssistMgr.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\SelectWhenDebugAssistASTVisitor.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\SelectionWhenDebug.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\AssistExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistArrayAccess.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistArrayCreationExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistAssignmentExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistBinaryExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistCastExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistCharacterLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistClassCreationExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistClassLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistConditionalExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistDoubleLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistFalseLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistFieldAccess.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistFloatLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistInstanceofExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistIntegerLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistLongLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistMethodInvocation.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistName.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistNullLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistParenthesizedExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistPostUnaryExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistPreUnaryExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistStringLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistSuperExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistThisExpression.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\CodeAssistTrueLiteral.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\ExpressionConverter.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\ast\SymbolInfo.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\SelecctResult.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\AssistResult.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\AssistInfo.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\FindLocalFieldOwnerVisitor.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\CompleteAssistASTVisitor.h">
+      <Filter>complete</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\AstNoFound.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\AstFound.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\CompletionEngine.h">
+      <Filter>complete</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\ICompletionRequestor.h">
+      <Filter>complete</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\ISearchableNameEnvironment.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\RelevanceConstants.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\CompleteLex.h">
+      <Filter>complete</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\ResultCollector.h">
+      <Filter>complete</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\CodeAssistUtil.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\IDocumentView.h">
+      <Filter>complete</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\BreakCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\CaseCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\ClassCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\ContinueCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\DefaultCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\DoCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\ElseCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\ForCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\ICompletionProposalExtension.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\IfCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\SuperCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\SwitchCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\synchronizedCompletionProposalcpp.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\throwCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\TryCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\WhileCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\TypeCompletionProposal.h">
+      <Filter>complete\Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\MethodCompletionProposal.h">
+      <Filter>complete\Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\LocalVariableCompletionProposal.h">
+      <Filter>complete\Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\JavaCompletionProposal.h">
+      <Filter>complete\Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\IJavaCompletionProposal.h">
+      <Filter>complete\Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\FieldCompletionProposal.h">
+      <Filter>complete\Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\PackageCompletionProposal.h">
+      <Filter>complete\Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\AnomymousCompletionProposal.h">
+      <Filter>complete\Proposal</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\complete\Proposal\InterfaceCompletionProposal.h">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\ExpresionConverterForWatch.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\impl\expr.h">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\ScopetAssistASTVisitor.h">
+      <Filter>select</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeAssistLib\select\SelectUtil.h">
+      <Filter>select</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\impl\FindAstNode.cpp">
+      <Filter>impl</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\impl\Engine.cpp">
+      <Filter>impl</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\select\SelectionEngine.cpp">
+      <Filter>select</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\select\SelectAssistASTVisitor.cpp">
+      <Filter>select</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\impl\CodeAssistMgr.cpp">
+      <Filter>impl</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\select\SelectWhenDebugAssistASTVisitor.cpp">
+      <Filter>select</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\select\ExpressionConverter.cpp">
+      <Filter>select</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\select\FindLocalFieldOwnerVisitor.cpp">
+      <Filter>select</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\CompleteAssistASTVisitor.cpp">
+      <Filter>complete</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\CompletionEngine.cpp">
+      <Filter>complete</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\CompleteLex.cpp">
+      <Filter>complete</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\ResultCollector.cpp">
+      <Filter>complete</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\impl\CodeAssistUtil.cpp">
+      <Filter>impl</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\impl\AssistResult.cpp">
+      <Filter>impl</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\BreakCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\CaseCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\ClassCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\ContinueCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\DefaultCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\DoCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\ElseCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\ForCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\IfCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\SuperCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\SwitchCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\synchronizedCompletionProposalcpp.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\throwCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\TryCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\WhileCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\TypeCompletionProposal.cpp">
+      <Filter>complete\Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\MethodCompletionProposal.cpp">
+      <Filter>complete\Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\LocalVariableCompletionProposal.cpp">
+      <Filter>complete\Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\JavaCompletionProposal.cpp">
+      <Filter>complete\Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\FieldCompletionProposal.cpp">
+      <Filter>complete\Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\PackageCompletionProposal.cpp">
+      <Filter>complete\Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\AnomymousCompletionProposal.cpp">
+      <Filter>complete\Proposal</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\CompletionEngineAstMake.cpp">
+      <Filter>complete</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\CompletionEngineKeyWord.cpp">
+      <Filter>complete</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\Proposal\InterfaceCompletionProposal.cpp">
+      <Filter>complete\Proposal\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\complete\CompletionEngineRelevance.cpp">
+      <Filter>complete</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\impl\AssistInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\impl\ExpresionConverterForWatch.cpp">
+      <Filter>impl</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\ast\AssistExpression.cpp">
+      <Filter>ast</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\impl\expr.cpp">
+      <Filter>impl</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\select\ScopetAssistASTVisitor.cpp">
+      <Filter>select</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\select\SelecctResult.cpp">
+      <Filter>select</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeAssistLib\select\SelectUtil.cpp">
+      <Filter>select</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

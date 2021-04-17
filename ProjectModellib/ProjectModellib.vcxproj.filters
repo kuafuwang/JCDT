@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="JavaModellIb">
+      <UniqueIdentifier>{19ec9c70-277a-48ae-8318-606aad308078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include">
+      <UniqueIdentifier>{041e4036-591d-4279-b954-b99e3445d059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\scr">
+      <UniqueIdentifier>{7638e931-4bf5-4d2d-bc1a-4224550aca88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\internal">
+      <UniqueIdentifier>{fccbe8db-d9ec-4e80-a692-04b1a67aca65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\internal\core">
+      <UniqueIdentifier>{452553c3-7ec1-41f3-9c7f-a4d36227f718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\internal\lookup">
+      <UniqueIdentifier>{150ff8e9-1725-4b6e-9ee6-4100aef0ba4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\scr\internal">
+      <UniqueIdentifier>{d345f970-41fb-4853-a9a6-17fb2861eb74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\scr\internal\core">
+      <UniqueIdentifier>{79d0e758-d076-4d55-bd03-a0b2f0e086b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\scr\internal\lookup">
+      <UniqueIdentifier>{453341e1-7580-48bc-a129-93532feb5924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\internal\core\interface">
+      <UniqueIdentifier>{3b19bd90-4ded-4dde-8e01-63efe41f188e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\internal\lookup\interface">
+      <UniqueIdentifier>{15c895f1-688a-4fd6-9cca-b6154382d01c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\compiler">
+      <UniqueIdentifier>{3d5b4ba3-226a-4df5-af0a-dc7ed9ae1313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\impl">
+      <UniqueIdentifier>{fea8fb00-ed97-4315-ac20-2ad0f58d39ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\scr\internal\compiler">
+      <UniqueIdentifier>{9c6fb9f5-77e5-42f2-819e-240d9186ab93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\internal\info">
+      <UniqueIdentifier>{d7581ded-fe0f-469a-b553-ac8ed8ee670e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\scr\internal\info">
+      <UniqueIdentifier>{24e3e2ab-3ff1-43e2-8e75-f96b457b7ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\scr\internal\independent_member">
+      <UniqueIdentifier>{85f0e64e-a012-4db9-b92e-237d9adefc5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JavaModellIb\include\internal\independent_member">
+      <UniqueIdentifier>{57e9c767-a475-4f13-964b-59c90fed9e82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\BaseJavaFile.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\BaseJavaType.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\BaseMethod.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\BaseProject.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\BinaryField.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\BinaryMethod.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\BinaryType.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\ClassFile.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\CloneJavaProject.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\CompilationUnit.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\JarPackageFragment.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\JarPackageFragmentRoot.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\JavaElement.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\JavaModel.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\Openable.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\OriginalJavaProject.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\PackageDeclaration.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\PackageFragment.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\PackageFragmentRoot.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\SourceField.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\SourceMethod.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\SourceType.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\JavaElementRequestor.h">
+      <Filter>JavaModellIb\include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\NameLookup.h">
+      <Filter>JavaModellIb\include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\SelectionRequestor.h">
+      <Filter>JavaModellIb\include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\SingleTypeRequestor.h">
+      <Filter>JavaModellIb\include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IClassFile.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\ICompilationUnit.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IField.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IImportContainer.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IImportDeclaration.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IInitializer.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IJavaElement.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IJavaElementType.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IJavaModel.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IJavaProject.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IMember.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IMethod.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\ImportContainer.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\ImportDeclaration.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IOpenable.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IPackageDeclaration.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IPackageFragment.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IPackageFragmentRoot.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\ISourceRange.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IType.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\IJavaElementRequestor.hpp">
+      <Filter>JavaModellIb\include\internal\lookup\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\IJavaSearchConstants.h">
+      <Filter>JavaModellIb\include\internal\lookup\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\ISearchableNameEnvironment.h">
+      <Filter>JavaModellIb\include\internal\lookup\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\ISelectionRequestor.h">
+      <Filter>JavaModellIb\include\internal\lookup\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\impl\config.h">
+      <Filter>JavaModellIb\include\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\compiler\BuilderMgr.h">
+      <Filter>JavaModellIb\include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\compiler\BuildMsgInfo.h">
+      <Filter>JavaModellIb\include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\Initializer.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\Member.h">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\SourceMapper.h">
+      <Filter>JavaModellIb\include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\compiler\AssistInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\impl\StructState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\JavaZip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\NameLookUpNotify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\ResouceOptStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectModelLib\Builder\ClasspathContainer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectModelLib\Builder\ClasspathEntry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectModelLib\Builder\ContainersCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectModelLib\Builder\IClasspathContainer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectModelLib\Builder\IClasspathEntry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectModelLib\Configuration\CompilerProperty\BaseCompilerEnvManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectModelLib\ProjectModel\Other\DependencyUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\info\InitializerElementInfo.h">
+      <Filter>JavaModellIb\include\internal\info</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\info\JavaElementInfo.h">
+      <Filter>JavaModellIb\include\internal\info</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\info\MemberElementInfo.h">
+      <Filter>JavaModellIb\include\internal\info</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\info\SourceFieldElementInfo.h">
+      <Filter>JavaModellIb\include\internal\info</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\info\SourceMethodElementInfo.h">
+      <Filter>JavaModellIb\include\internal\info</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\info\SourceRefElementInfo.h">
+      <Filter>JavaModellIb\include\internal\info</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\info\SourceTypeElementInfo.h">
+      <Filter>JavaModellIb\include\internal\info</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\SearchableEnvironmentRequestor.h">
+      <Filter>JavaModellIb\include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\lookup\ISearchRequestor.h">
+      <Filter>JavaModellIb\include\internal\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\internal\core\IJavaCardDocType.h">
+      <Filter>JavaModellIb\include\internal\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\compiler\BraveCompiler.h">
+      <Filter>JavaModellIb\include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\compiler\DefaultProblem.h">
+      <Filter>JavaModellIb\include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="JavaModelLib\compiler\JDTCompiler.h">
+      <Filter>JavaModellIb\include\compiler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BaseJavaFile.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BaseJavaType.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BaseMethod.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BaseProject.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BinaryField.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BinaryMethod.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\BinaryType.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\ClassFile.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\CloneJavaProject.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\CompilationUnit.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\Initializer.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\JarPackageFragment.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\JarPackageFragmentRoot.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\JavaElement.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\JavaModel.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\Openable.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\OriginalJavaProject.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\PackageDeclaration.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\PackageFragment.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\PackageFragmentRoot.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\SourceField.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\SourceMethod.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\SourceType.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="JavaModelLib\internal\lookup\SelectionRequestor.cpp">
+      <Filter>JavaModellIb\scr\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="JavaModelLib\internal\lookup\NameLookup.cpp">
+      <Filter>JavaModellIb\scr\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\compiler\BuilderMgr.cpp">
+      <Filter>JavaModellIb\scr\internal\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\ISourceRange.cpp">
+      <Filter>JavaModellIb\include\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\IMember.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\Member.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\IType.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\IField.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="JavaModelLib\internal\lookup\SourceMapper.cpp">
+      <Filter>JavaModellIb\scr\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\info\SourceFieldElementInfo.cpp">
+      <Filter>JavaModellIb\scr\internal\info</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\info\SourceMethodElementInfo.cpp">
+      <Filter>JavaModellIb\scr\internal\info</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\info\SourceTypeElementInfo.cpp">
+      <Filter>JavaModellIb\scr\internal\info</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\info\InitializerElementInfo.cpp">
+      <Filter>JavaModellIb\scr\internal\info</Filter>
+    </ClCompile>
+    <ClCompile Include="JavaModelLib\internal\lookup\SourceMapperFile.cpp">
+      <Filter>JavaModellIb\scr\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\IImportDeclaration.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="JavaModelLib\internal\lookup\SearchableEnvironmentRequestor.cpp">
+      <Filter>JavaModellIb\scr\internal\lookup</Filter>
+    </ClCompile>
+    <ClCompile Include="JavaModelLib\compiler\BuildMsgInfo.cpp">
+      <Filter>JavaModellIb\scr\internal\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\internal\core\IPackageDeclaration.cpp">
+      <Filter>JavaModellIb\scr\internal\core</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\compiler\BraveCompiler.cpp">
+      <Filter>JavaModellIb\scr\internal\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\compiler\DefaultProblem.cpp">
+      <Filter>JavaModellIb\scr\internal\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="scr\compiler\JDTCompiler.cpp">
+      <Filter>JavaModellIb\scr\internal\compiler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
