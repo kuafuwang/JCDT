@@ -1,6 +1,7 @@
 # JCDT
 JCDT  liks  JDT
 ========
+现在JCIDE已经迁移到LSP模式的构架,这些库适用于JCIDE 3.xx版本. 5.0之后的就不采用这个库了.所有放出来,当做纪念吧.这些库写的很辛苦,它帮助了我的成长.
 It is a another version of JDT.
 This is the core part of JCIDE's Java development tools. It contains the non-UI support for compiling and working with Java code, including the following:
 
